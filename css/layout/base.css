@@ -1,0 +1,28 @@
+body,
+html {
+  height: 100%; }
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: lighter;
+  line-height: 1.42; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.section {
+  height: 100vh;
+  min-height: 650px; }
+
+.section__title {
+  font-family: 'gagalin';
+  font-size: 72px; }
+
+.section__wrapper {
+  margin: 0 auto; }

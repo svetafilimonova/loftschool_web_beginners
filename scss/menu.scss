@@ -1,0 +1,37 @@
+.sidebar {
+    width: 10%;
+    float: right;
+}
+
+.navigation__list {
+    list-style: none;
+    padding-right: 50px;
+    position: fixed;
+    top: 12%;
+    right: 5%;
+}
+
+.navigation__list-link {
+    position: relative;
+}
+
+.navigation__list-item {
+    margin-bottom: 4px;
+}
+
+.navigation__list-link:after {
+    content: "";
+    display: none;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 3px;
+    left: -6px;
+}
+
+.navigation__list-link:hover:after {
+    display: block;
+}
