@@ -13,6 +13,10 @@ body {
     box-sizing: border-box;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
 .clearfix:after {
     content: "";
     display: block;
@@ -29,6 +33,11 @@ body {
   font-size: 72px;
 }
 
+.section__header {
+    font-family: 'lifehack';
+
+}
 .section__wrapper {
     margin: 0 auto;
+    width: 950px;
 }
