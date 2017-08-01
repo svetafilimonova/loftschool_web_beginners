@@ -13,13 +13,19 @@
 
 .navigation__list-link {
     position: relative;
-}
+    width: 20px;
+    height: 20px;
 
-.navigation__list-item {
-    margin-bottom: 4px;
-}
+    &:before {
+        content: "";
+        display: inline-block;
+        border-radius: 50%;
+        width: 6px;
+        height: 6px;
+        background-color:white;
+    }
 
-.navigation__list-link:after {
+    &:after {
     content: "";
     display: none;
     background-color: transparent;
@@ -32,6 +38,9 @@
     left: -6px;
 }
 
-.navigation__list-link:hover:after {
+&:hover:after {
     display: block;
 }
+}
+
+

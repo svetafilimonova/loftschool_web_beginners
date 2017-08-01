@@ -3,11 +3,20 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    
+
 }
 
 .greeting__content {
     vertical-align: middle;
+
+}
+
+.greeting__content-wrapper:before {
+    content: "";
+     height: 100%;
+     width: 0;
+     display: inline-block;
+     vertical-align: middle;
 }
 .greeting__content-picture {
     background-image: url(../img/bg/drops.png);
@@ -16,7 +25,7 @@
     height: 418px;
     display: inline-block;
     vertical-align: middle;
-    margin-left: 20px;
+
 }
 
 .greeting__content-text {
@@ -35,7 +44,6 @@
 }
 
 .section__title_white {
-    font-family: 'lifehack';
     font-size: 65px;
     color: #ffffff;
     line-height: 1;

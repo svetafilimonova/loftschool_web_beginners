@@ -23,6 +23,10 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+ul {
+  padding: 0;
+  margin: 0; }
+
 .clearfix:after {
   content: "";
   display: block;
@@ -36,8 +40,12 @@ body {
   font-family: 'gagalin';
   font-size: 72px; }
 
+.section__header {
+  font-family: 'lifehack'; }
+
 .section__wrapper {
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 950px; }
 
 .sidebar {
   width: 10%;
@@ -51,25 +59,29 @@ body {
   right: 5%; }
 
 .navigation__list-link {
-  position: relative; }
-
-.navigation__list-item {
-  margin-bottom: 4px; }
-
-.navigation__list-link:after {
-  content: "";
-  display: none;
-  background-color: transparent;
-  border: 1px solid white;
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 3px;
-  left: -6px; }
-
-.navigation__list-link:hover:after {
-  display: block; }
+  position: relative;
+  width: 20px;
+  height: 20px; }
+  .navigation__list-link:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background-color: white; }
+  .navigation__list-link:after {
+    content: "";
+    display: none;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 3px;
+    left: -6px; }
+  .navigation__list-link:hover:after {
+    display: block; }
 
 .header {
   display: inline-block; }
@@ -122,8 +134,9 @@ body {
     color: #ffffff;
     font-weight: 500;
     text-decoration: none;
-    text-align: center;
-    padding-top: 7px; }
+    padding: 8px 15px;
+    text-transform: uppercase;
+    font-size: 13px; }
     .button .button__link:hover {
       background-color: #c1401e; }
 
@@ -136,14 +149,20 @@ body {
 .greeting__content {
   vertical-align: middle; }
 
+.greeting__content-wrapper:before {
+  content: "";
+  height: 100%;
+  width: 0;
+  display: inline-block;
+  vertical-align: middle; }
+
 .greeting__content-picture {
   background-image: url(../img/bg/drops.png);
   background-repeat: no-repeat;
   width: 456px;
   height: 418px;
   display: inline-block;
-  vertical-align: middle;
-  margin-left: 20px; }
+  vertical-align: middle; }
 
 .greeting__content-text {
   display: inline-block;
@@ -157,7 +176,6 @@ body {
   margin-bottom: 3px; }
 
 .section__title_white {
-  font-family: 'lifehack';
   font-size: 65px;
   color: #ffffff;
   line-height: 1; }
@@ -185,14 +203,14 @@ body {
   margin-top: 0;
   padding-top: 57px; }
 
-.about__description-info {
+.about__description-item {
   width: 300px;
   display: inline-block;
   text-align: center;
   vertical-align: text-top;
   margin-left: 22px; }
 
-.about__description {
+.about__description-list {
   width: 1000px;
   margin: 0 auto; }
 
@@ -221,11 +239,16 @@ body {
   height: 100%;
   min-height: 650px; }
 
-.feedback__block {
+.feedback__list {
+  height: 100%; }
+
+.feedback__item {
   display: inline-block;
   width: 25%;
   height: 50%;
   position: relative; }
+  .feedback__item:hover .feedback__text {
+    opacity: 1; }
 
 .feedback__photo {
   width: 100%;
@@ -255,7 +278,7 @@ body {
   font-size: 14px;
   font-family: 'gagalin';
   margin-bottom: 21px;
-  margin-top: 42px; }
+  padding-top: 42px; }
 
 .feedback__comment {
   font-size: 14px;
@@ -279,11 +302,10 @@ body {
   padding: 6px 13px;
   text-align: center;
   vertical-align: middle; }
+  .feedback__link:hover {
+    background-color: #1f2122; }
 
-.feedback__link:hover {
-  background-color: #1f2122; }
-
-.feedback__block:hover .feedback__text {
+.feedback__item:hover .feedback__text {
   opacity: 1; }
 
 .feedback__photo-one {
