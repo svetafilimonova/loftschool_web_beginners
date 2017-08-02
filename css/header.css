@@ -1,7 +1,16 @@
 .header {
-  display: inline-block; }
-  .header .header__logo-link {
-    display: inline-block; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding-top: 1em;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline; }
   .header .header__logo {
     display: inline-block;
     width: 95px;
@@ -11,46 +20,41 @@
     vertical-align: middle;
     margin-right: 180px; }
 
-.menu {
-  display: inline-block; }
-  .menu .menu__list {
+.menu__list {
+  list-style: none; }
+  .menu__list .menu__item {
     display: inline-block;
-    list-style: none; }
-    .menu .menu__list .menu__item {
+    margin-right: 10px; }
+    .menu__list .menu__item:after {
+      content: "";
       display: inline-block;
-      margin-right: 10px; }
-      .menu .menu__list .menu__item:after {
-        content: "";
-        display: inline-block;
-        width: 4px;
-        height: 4px;
-        border-radius: 50%;
-        background-color: white;
-        text-align: center;
-        vertical-align: middle;
-        margin-left: 14px; }
-      .menu .menu__list .menu__item:last-child:after {
-        display: none; }
-      .menu .menu__list .menu__item .menu__link {
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 13px;
-        color: #ffffff;
-        text-transform: uppercase; }
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: white;
+      text-align: center;
+      vertical-align: middle;
+      margin-left: 14px; }
+    .menu__list .menu__item:last-child:after {
+      display: none; }
+    .menu__list .menu__item .menu__link {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 13px;
+      color: #ffffff;
+      text-transform: uppercase; }
 
-.button {
-  display: inline-block; }
-  .button .button__link {
-    display: inline-block;
-    border-radius: 5px;
-    background-color: #e45028;
-    width: 97px;
-    height: 35px;
-    color: #ffffff;
-    font-weight: 500;
-    text-decoration: none;
-    padding: 8px 15px;
-    text-transform: uppercase;
-    font-size: 13px; }
-    .button .button__link:hover {
-      background-color: #c1401e; }
+.button__link {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #e45028;
+  width: 97px;
+  height: 35px;
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 8px 15px;
+  text-transform: uppercase;
+  font-size: 13px; }
+  .button__link:hover {
+    background-color: #c1401e; }

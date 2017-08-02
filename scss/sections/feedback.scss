@@ -1,15 +1,15 @@
 .feedback__container {
-    font-size: 0;
     height: 100%;
     min-height: 650px;
 }
 
 .feedback__list {
     height: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .feedback__item {
-    display: inline-block;
     width: 25%;
     height: 50%;
     position: relative;
@@ -40,7 +40,6 @@
     width: 230px;
     height: 100%;
     margin-left: 26px;
-    /* margin-top: 44px; */
     line-height: 1.6;
 }
 
@@ -55,7 +54,7 @@
     font-size: 14px;
     font-family: 'Ubuntu';
     font-weight: 300;
-    margin-bottom: 23px;
+    margin-bottom: 3em;
 }
 
 .feedback__link {

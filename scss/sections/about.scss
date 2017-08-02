@@ -11,20 +11,22 @@
     color: #2f3234;
     margin-top: 0;
     padding-top: 57px;
+    margin-bottom: 90px;
 }
 
 .about__description-item {
     width: 300px;
-    display: inline-block;
     text-align: center;
     vertical-align: text-top;
-    margin-left: 22px;
 }
 
 .about__description-list {
     width: 1000px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
+
 .about__description-pic {
     width: 200px;
     height: 120px;
@@ -46,4 +48,22 @@
     font-weight: 300;
     font-size: 14px;
     color: #848281;
+}
+
+.meat-icon {
+    width: 104px;
+    height: 94px;
+    fill: #e25028;
+}
+
+.hand-icon {
+    fill: #f8b43a;
+    width: 88px;
+    height: 86px;
+}
+
+.natural-icon {
+    fill: #8ac03e;
+    width: 92px;
+    height: 77px;
 }

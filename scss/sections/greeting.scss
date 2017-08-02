@@ -7,30 +7,24 @@
 }
 
 .greeting__content {
-    vertical-align: middle;
 
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.greeting__content-wrapper:before {
-    content: "";
-     height: 100%;
-     width: 0;
-     display: inline-block;
-     vertical-align: middle;
+
 }
 .greeting__content-picture {
     background-image: url(../img/bg/drops.png);
     background-repeat: no-repeat;
     width: 456px;
     height: 418px;
-    display: inline-block;
-    vertical-align: middle;
+ 
 
 }
 
 .greeting__content-text {
-    display: inline-block;
-    vertical-align: middle;
+
     width: 50%;
     margin-top: 55px;
     margin-left: 9px;
@@ -50,7 +44,7 @@
 }
 
 .arrow {
-    background-image: url(../img/icons/arrow-scroll.png);
+    // background-image: url(../img/icons/arrow-scroll.png);
     background-repeat: no-repeat;
     width: 45px;
     height: 25px;
@@ -58,4 +52,13 @@
     position: absolute;
     left: 50%;
     top: 95%;
+}
+
+.arrow-icon {
+    fill: white;
+     left: 50%;
+    top: 95%;
+    width: 33px;
+    height: 29px;
+    
 }

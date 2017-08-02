@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/svg4everybody.js"></script>
+    <script>
+        svg4everybody();
+    </script>
 </head>
 
 <body>
@@ -45,7 +49,6 @@
                         <a href="#" class="button__link">Заказать</a>
                     </div>
                 </header>
-                <div class="greeting__content-wrapper">
                 <div class="greeting__content">
                     <div class="greeting__content-picture"></div>
                     <div class="greeting__content-text">
@@ -54,7 +57,12 @@
                     </div>
                 </div>
                 </div>
-                <div class="arrow"><a href="" class="arrow__link"></a></div>
+                <div class="arrow"><a href="" class="arrow__link">
+                    <svg class="arrow-icon">
+                        <use xlink:href="img/sprite/sprite.svg#arrow-scroll"></use>
+                    </svg>
+                </a>
+                </div>
             </div>
         </section>
         <section class="section about">
@@ -62,20 +70,32 @@
                 <h1 class="section__title section__title_black">Мы лучшие</h1>
                 <ul class="about__description-list">
                     <li class="about__description-item">
-                        <div class="about__description-pic" style="background-image: url(img/icons/meat.png);"></div>
+                        <div class="about__description-pic" >
+                            <svg class="meat-icon">
+                        <use xlink:href="img/sprite/sprite.svg#meat"></use>
+                    </svg>
+                </div>
                         <div class="section__header about__description-title">100% свежее мясо</div>
                         <div class="about__description-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
 
                     </li>
                     <li class="about__description-item">
-                        <div class="about__description-pic" style="background-image: url(img/icons/hand.png);"></div>
+                        <div class="about__description-pic">
+                             <svg class="hand-icon">
+                        <use xlink:href="img/sprite/sprite.svg#hand"></use>
+                    </svg>
+                        </div>
                         <div class="about__description-title">Ручная сборка</div>
                         <div class="about__description-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие
                             притягивает сюжетный реформаторский пафос.</div>
 
                     </li>
                     <li class="about__description-item">
-                        <div class="about__description-pic" style="background-image: url(img/icons/natural.png);"></div>
+                        <div class="about__description-pic">
+                         <svg class="natural-icon">
+                        <use xlink:href="img/sprite/sprite.svg#natural"></use>
+                    </svg>
+                        </div>
                         <div class="about__description-title">Натуральные ингредиенты</div>
                         <div class="about__description-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
 
