@@ -1,0 +1,77 @@
+.menu {
+    background-image: url(../img/bg/menu.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.menu__wrapper {
+     display: flex;
+     justify-content: space-between;
+    height: 100%;
+    
+}
+
+.menu__list-wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+.menu__list {
+    // width: 100vw;
+    height: 100%;
+    display:flex;
+    justify-content: flex-end;
+
+}
+
+.menu__item {
+    list-style: none;
+    display:flex;
+    height: 100%;
+    
+}
+
+.menu-title {
+    color: #fff;
+}
+
+.menu__item-header {
+    color: #fff;
+    font-size: 40px;
+    height: 100%;
+    width: 85px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter: grayscale(70%);
+   
+}
+
+.menu__item-text {
+   transform: rotate(90deg);
+   transform: rotate(-90deg); 
+   text-align: left;
+}
+
+.menu__item-header_meat {
+    background-image: url(../img/bg/meateater.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.menu__item-header_vegan {
+    background-image: url(../img/bg/vegan.jpg);
+    background-position: 80% 50%;
+}
+
+.menu__item-header_diet {
+    background-image: url(../img/bg/diet.jpg);
+}
+
+.menu__item-description {
+    background-color: rgba(56,58,62,.93);
+    display: none;
+}

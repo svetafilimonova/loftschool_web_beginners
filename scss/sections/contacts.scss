@@ -1,0 +1,62 @@
+.contacts {
+    background-image: url(../img/bg/map.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position:relative;
+    display: flex;
+}
+
+.footer {
+    background-color: #111111;
+    position: absolute;
+    bottom:0;
+}
+
+.footer_container {
+    display: flex;
+    width:90%;
+    margin: 0 auto;
+}
+.footer__info {
+    font-family:'Ubuntu', sans-serif;
+    font-size: 14px;
+    color:#fff;
+    width:50%;
+    text-align: left;
+    padding: 13px;
+}
+.footer__address{
+    margin-bottom: 5px;
+}
+.footer__phone {
+    color:$orange;
+    font-weight: bold;
+    display: flex;
+}
+.phone-icon {
+   fill: $orange;
+   width: 15px;
+   height: 15px;
+   margin-right: 10px;
+
+}
+
+.footer__socials{
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.social-icon {
+    fill: #fff;
+    width: 30px;
+    height: 30px;
+    opacity: .3;
+    transition: .3s;
+    margin-right: 20px;
+
+    &:hover{
+        opacity:1;
+    }
+}
