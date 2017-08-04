@@ -10,6 +10,9 @@ $red:#e25028;
 @import "layout/fonts.scss";
 @import "layout/base.scss";
 
+//common
+@import "common/btn.scss";
+
 //blocks
 
 @import "fixedmenu.scss";
@@ -25,8 +28,7 @@ $red:#e25028;
 @import "sections/contacts.scss";
 @import "sections/order.scss";
 
-//common
-@import "common/btn.scss";
+
 
 
 

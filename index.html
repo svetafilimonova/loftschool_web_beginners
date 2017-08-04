@@ -396,8 +396,9 @@
                 <div class="section__title order__title">
                     Закажите доставку
                 </div>
-                <div class="form">
+                        <div class="order__container">
                     <form action="">
+                        <div class="form">
                         <div class="form__column-left">
                         <div class="form__row form__row_double">
                             <label for="name" class="form__label">
@@ -452,7 +453,7 @@
                         </div>
                          </div>
                         <div class="form__column-right">
-                            <div class="form__row">
+                            <div class="form__row form__row_textarea">
                              <label for="" class="form__label">
                                 <div class="form__label-title"> 
                                    Комментарий 
@@ -460,39 +461,40 @@
                             <textarea name="comment" id=""  class="form__textarea"></textarea>
                             </label>
                         </div>
-                        <div class="form__row">
-                           <label for="" class="form__label-title">
-                            <input type="radio" name="pay" class="form__radio">
+                        <div class="form__row form__row_btn">
+                           <label for="cash" class="form__label form__label-control">
+                            <input id="cash" type="radio" name="pay" class="form__radio" checked>
                             <div class="form__radio-fake"></div>
-                             <div class="form__radio-title"> 
+                             <div class="form__control-title"> 
                                     Потребуется сдача  
-                            </div>
-                                
+                            </div>  
                             </label> 
-                        <label for="" class="form__label-title">
-                            <input type="radio" name="pay" class="form__radio">
+                        <label for="card" class="form__label form__label-control">
+                            <input id="card" type="radio" name="pay" class="form__radio">
                             <div class="form__radio-fake"></div>
-                            <div class="form__label-title"> 
+                            <div class="form__control-title"> 
                                     Оплата по карте 
                             </div>
                             </label> 
                         </div>
-                        <div class="form__row">
-                            <label for="" class="form__label">
-                                <div class="form__label-title"> 
+                        <div class="form__row form__row_btn">
+                            <label for="callback" class="form__label form__label-control">
+                            <input type="checkbox" name="call" class="form__check" id="callback">
+                            <div class="form__checkbox-fake"></div>
+                             <div class="form__control-title"> 
                                     Не перезванивать 
                                 </div>
-                            <input type="checkbox" name="call" class="form__check">
+                            
                             </label> 
                         </div>
-                        <div class="form__row">
-                             <button type="submit" class="button form__btn">Заказать</button>
-                              <button type="submit" class="button form__btn">Очистить</button>
+                        <div class="form__row form__row_btn">
+                             <button type="submit" class="button form__btn form__btn_active">Заказать</button>
+                              <button type="submit" class="form__btn_inactive button form__btn ">Очистить</button>
                         </div>   
                         </div>
                     </form>
+                    </div>
                 </div>
-            </div>
         </section>
         <section class="section contacts">
 
