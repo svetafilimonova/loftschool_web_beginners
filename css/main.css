@@ -372,7 +372,19 @@ footer {
   height: 120px;
   background-repeat: no-repeat;
   background-position: center center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .about__description-title {
   font-family: 'lifehack';
@@ -466,10 +478,10 @@ footer {
   line-height: 1.6; }
 
 .feedback__name {
-  margin-bottom: 21px; }
+  margin-bottom: 17px; }
 
 .feedback__comment {
-  margin-bottom: 3em; }
+  margin-bottom: 12px; }
 
 .feedback__link {
   text-decoration: none;
@@ -532,7 +544,7 @@ footer {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 2em; }
+  margin-bottom: 12px; }
   .team__block-title:before {
     content: "";
     width: 0;
@@ -561,7 +573,7 @@ footer {
   height: 100px;
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 1.5em;
+  margin-right: 21px;
   position: relative; }
 
 .team__description-pic {
@@ -577,7 +589,8 @@ footer {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  padding-left: 20px; }
 
 .team__block-header {
   color: #f9b43b;
@@ -593,7 +606,7 @@ footer {
   width: 15em; }
 
 .team__block-list {
-  padding-left: 5.7em; }
+  padding-left: 80px; }
 
 .team__description {
   height: 0;
@@ -650,25 +663,29 @@ footer {
   display: flex;
   cursor: pointer; }
   .menu__item.active .menu__item-description {
-    width: auto; }
+    width: 540px;
+    padding-top: 64px;
+    padding-left: 30px; }
 
 .menu-title {
-  color: #fff; }
+  color: #fff;
+  margin-left: 98px;
+  margin-top: 84px; }
 
 .menu__item-text {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  text-align: left;
+  -webkit-transform: rotate(-90deg) translateX(-50%) translateY(-50%);
+  -ms-transform: rotate(-90deg) translateX(-50%) translateY(-50%);
+  transform: rotate(-90deg) translateX(-50%) translateY(-50%);
+  text-align: center;
   white-space: nowrap;
   position: absolute;
   position: absolute;
   top: 50%;
-  left: 0;
-  right: 0; }
+  left: 50%;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  margin-top: -1.25rem; }
 
 .menu__item-header_meat {
   background-image: url(../img/bg/meateater.jpg);
@@ -686,9 +703,8 @@ footer {
 
 .menu__item-description {
   background-color: rgba(56, 58, 62, 0.93);
-  padding-top: 64px;
-  padding-left: 30px;
-  text-align: center;
+  text-align: left;
+  line-height: 2;
   overflow: hidden;
   width: 0; }
 
@@ -696,7 +712,7 @@ footer {
   color: #fff;
   font-size: 40px;
   height: 100%;
-  width: 30%;
+  width: 81px;
   -webkit-box-shadow: 0 0 0 128px rgba(0, 0, 0, 0.7) inset;
   box-shadow: 0 0 0 128px rgba(0, 0, 0, 0.7) inset;
   background-repeat: no-repeat;
@@ -758,12 +774,16 @@ footer {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .phone-icon {
   fill: #e45028;
-  width: 15px;
-  height: 15px;
+  width: 11px;
+  height: 11px;
   margin-right: 10px; }
 
 .footer__socials {
@@ -783,8 +803,8 @@ footer {
 
 .social-icon {
   fill: #fff;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   opacity: .3;
   -webkit-transition: .3s;
   -o-transition: .3s;
@@ -871,30 +891,30 @@ footer {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20px; }
+  margin-bottom: 13px; }
 
 .form__label {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  margin-right: 20px; }
+  margin-right: 17px; }
 
 .form__label-title {
   color: #fff;
-  margin-bottom: 10px; }
+  margin-bottom: 5px; }
 
 .form__input {
   font-size: 14px;
-  padding: 14px;
+  padding: 9px;
   border-radius: 5px;
   border: 1px solid #d1cfcb;
   margin-right: 20px;
   width: 100%; }
 
 .form__textarea {
-  height: 110px;
   width: 95%;
+  height: 111px;
   border: 1px solid #d1cfcb;
   border-radius: 5px;
   padding: 7px 9px;
@@ -980,9 +1000,5 @@ footer {
   display: block; }
 
 .form__row_btn {
-  margin-bottom: 20px;
-  width: 75%; }
-
-.form__row_textarea {
-  margin-bottom: 11px;
-  height: 143px; }
+  margin-bottom: 17px;
+  width: 81%; }
