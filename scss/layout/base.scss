@@ -9,6 +9,16 @@ body {
     line-height: 1.42;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    font-weight: normal;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -16,7 +26,30 @@ body {
 ul {
     padding: 0;
     margin: 0;
+
+    li {
+         list-style: none;
+    }
 }
+
+p {
+    margin: 0;
+    padding:0;
+}
+
+footer {
+    position:relative;
+    width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    min-width: 940px+20px;
+    position:relative;
+    overflow: hidden;
+}
+
 .clearfix:after {
     content: "";
     display: block;
@@ -26,18 +59,37 @@ ul {
 .section {
     height: 100vh;
     min-height: 650px;
-    
+    display: flex;
+    flex-direction: column;
+
+
 }
+
 .section__title {
-  font-family: 'gagalin';
-  font-size: 72px;
+    @include gagalin();
+    font-size: 72px;
 }
 
 .section__header {
-    font-family: 'lifehack';
-
+    @include lifehack();
 }
+
 .section__wrapper {
     margin: 0 auto;
-    width: 950px;
+    width: 80%;
+    // position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.text__title {
+    font-size: 14px;
+    @include gagalin();
+}
+
+.section__text {
+    font-size: 14px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    color: #ffffff;
 }

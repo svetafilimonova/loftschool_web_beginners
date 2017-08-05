@@ -1,0 +1,115 @@
+.team {
+    background-image: url(../img/bg/team.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.team__block {
+    color: #ffffff;
+    background-color: rgba($grey, .93);
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top:0;
+    bottom: 0;
+    height: 100vh;
+    min-height: 650px;
+
+}
+
+.team__block-container {
+    width: 70%;
+}
+
+.team__block-title {
+    
+    color: #ffffff;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 6px solid #f9b43b;
+        margin-right: 10px;
+        transition: .5s;
+    }
+    // &:hover:before {
+    //     transform: rotate(180deg);
+    // }
+}
+
+.team__block-item {
+    margin-bottom: 10px;
+
+    &.active {
+        .team__description {
+            height: auto;
+        }
+
+        .team__block-title {
+            color:$yellow;
+
+            &:before{
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+.team__description-photo {
+   width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1.5em;
+    position: relative;
+}
+
+.team__description-pic {
+    
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.team__description {
+    display: flex;
+}
+
+.team__block-header {
+    color:#f9b43b;
+    padding-top: .9em;
+    padding-bottom: .8em;
+    padding-left: 1.1em;
+}
+
+.team__description-job {
+    font-weight: bold;
+    margin-bottom: 1.2em;
+}
+
+.team__description-text {
+    width: 15em;
+    
+}
+
+.team__block-list {
+    padding-left: 5.7em;
+}
+
+.team__description {
+     height:0;
+     overflow: hidden;
+}

@@ -11,3 +11,11 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@mixin gagalin() {
+    font-family: 'gagalin', Helvetica, sans-serif;
+}
+
+@mixin lifehack () {
+   font-family: 'lifehack'; 
+}
