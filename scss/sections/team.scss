@@ -34,7 +34,7 @@
     transition: 0.4s;
     display: flex;
     align-items: center;
-    margin-bottom: 2em;
+    margin-bottom: 12px;
     &:before {
         content: "";
         width: 0;
@@ -72,7 +72,7 @@
     height: 100px;
     border-radius: 50%;
     overflow: hidden;
-    margin-right: 1.5em;
+    margin-right: 21px;
     position: relative;
 }
 
@@ -86,6 +86,7 @@
 }
 .team__description {
     display: flex;
+    padding-left: 20px;
 }
 
 .team__block-header {
@@ -106,7 +107,7 @@
 }
 
 .team__block-list {
-    padding-left: 5.7em;
+    padding-left: 80px;
 }
 
 .team__description {
