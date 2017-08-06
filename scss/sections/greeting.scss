@@ -1,0 +1,64 @@
+.greeting {
+    background-image: url(../img/bg/greeting.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+.greeting__content {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.greeting__content-picture {
+    background-image: url(../img/bg/drops.png);
+    background-repeat: no-repeat;
+    width: 456px;
+    height: 418px;
+ 
+
+}
+
+.greeting__content-text {
+
+    width: 50%;
+    margin-top: 55px;
+    margin-left: 9px;
+}
+
+
+
+.section__title_orange {
+    color: #f9b43b;
+    margin-bottom: 3px;
+}
+
+.section__title_white {
+    font-size: 65px;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.arrow {
+    // background-image: url(../img/icons/arrow-scroll.png);
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 25px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 95%;
+}
+
+.arrow-icon {
+    fill: white;
+     left: 50%;
+    top: 95%;
+    width: 33px;
+    height: 29px;
+    
+}

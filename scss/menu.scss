@@ -1,0 +1,42 @@
+
+.navigation__list {
+    list-style: none;
+    padding-right: 50px;
+    position: fixed;
+    top: 12%;
+    right: 5%;
+}
+
+.navigation__list-link {
+    position: relative;
+    width: 20px;
+    height: 20px;
+
+    &:before {
+        content: "";
+        display: inline-block;
+        border-radius: 50%;
+        width: 6px;
+        height: 6px;
+        background-color:white;
+    }
+
+    &:after {
+    content: "";
+    display: none;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 3px;
+    left: -6px;
+}
+
+&:hover:after {
+    display: block;
+}
+}
+
+
