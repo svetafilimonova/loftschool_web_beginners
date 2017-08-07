@@ -3,31 +3,68 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+
+     @include tablet {
+       justify-content: center;
+       
+    }
 }
 
 .about__wrapper{
     height: 75%;
+
+       @include tablet {
+       height: 80%;
+    }
+
+
 }
 .section__title_color_black {
     font-weight: 500;
     text-align: center;
     color: #2f3234;
     margin-top: 0;
-    padding-top: 57px;
-    margin-bottom: 90px;
+    padding-top: rem(57px);
+    margin-bottom: rem(90px);
+
+      @include tablet {
+       margin-bottom: 0;
+       
+    }
+
+       @include phone {
+       font-size: rem(50px);
+    }
+
 }
 
 .about__description-item {
-    width: 300px;
+    // width: rem(300px);
     text-align: center;
     vertical-align: text-top;
-    margin:0 15px;
+    margin:0 rem(15px);
     flex:1;
+
+    @include tablet {
+        margin:0;
+    }
+     @include phone {
+         display: flex;
+         flex-direction: row;
+         margin-bottom: rem(50px);
+    }
 }
 
+.about__description-info{
+     @include phone {
+         text-align: left;
+        line-height: 1.8;
+        color: #2f3234;
+    }
+}
 .about__container {
     flex:1;
     display: flex;
@@ -36,53 +73,62 @@
 }
 
 .about__description-list {
-    width: 1000px;
+    // width: rem(1000px);
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
+
+     @include phone {
+       flex-direction: column;
+    }
 }
 
 .about__description-pic {
-    width: 200px;
-    height: 120px;
+    width: rem(150px);
+    height: rem(120px);
     background-repeat: no-repeat;
     background-position: center center;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
+
+     @include phone {
+        
+         margin-right: rem(30px);
+    }
 }
 
 .about__description-title {
     font-family: 'lifehack';
-    font-size: 24px;
+    font-size: rem(24px);
     color: #2f3234;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: rem(15px);
+    margin-bottom: rem(15px);
 }
 
 .about__description-text {
     font-family: 'Ubuntu';
     font-weight: 300;
-    font-size: 14px;
+    font-size: rem(14px);
     color: #848281;
 }
 
 .meat-icon {
-    width: 104px;
-    height: 94px;
+    width: rem(104px);
+    height: rem(94px);
     fill: #e25028;
 }
 
 .hand-icon {
     fill: #f8b43a;
-    width: 88px;
-    height: 86px;
+    width: rem(88px);
+    height: rem(86px);
 }
 
 .natural-icon {
     fill: #8ac03e;
-    width: 92px;
-    height: 77px;
+    width: rem(92px);
+    height: rem(77px);
 }

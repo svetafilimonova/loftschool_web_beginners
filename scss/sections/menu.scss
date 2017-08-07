@@ -6,10 +6,9 @@
 }
 
 .menu__wrapper {
-     display: flex;
-     justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
     height: 100%;
-    
 }
 
 .menu__list-wrapper {
@@ -19,96 +18,82 @@
 }
 
 .menu__list {
-     display: flex;
+    display: flex;
     min-height: 100vh;
     max-height: 100vh;
     justify-content: flex-end;
-     overflow: hidden;
-
+    overflow: hidden;
 }
 
 .menu__item {
-    
-  display: flex;
-  cursor: pointer;
-
-   &.active {
-      .menu__item-description {
-          width:540px;
-             padding-top: 64px;
-            padding-left: 30px;   
-      }
-   }
-  
-    
+    display: flex;
+    cursor: pointer;
+    &.active {
+        .menu__item-description {
+            width: rem(540px);
+            padding-top: rem(64px);
+            padding-left: rem(30px);
+        }
+    }
 }
 
 .menu-title {
     color: #fff;
-    margin-left: 98px;
-    margin-top: 84px;
+    margin-left: rem(98px);
+    margin-top: rem(84px);
+
+
+     @include tablet {
+        margin-left: rem(16px);
+        margin-top: rem(92px);
+       
+         
+    }
+
+      @include phone {
+         font-size:rem(50px);
+        margin-left: rem(50px);
+        margin-top: rem(46px);
+         
+    }
 }
 
-
-
 .menu__item-text {
-
-   transform: rotate(-90deg) translateX(-50%) translateY(-50%); 
-   text-align: center;
-   white-space: nowrap;
-   position: absolute;
-   position: absolute;
-   top: 50%; 
+    transform: rotate(-90deg) translateX(-50%) translateY(-50%);
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform-origin: 0 0;
     margin-top: -1.25rem;
-    // letter-spacing: 6px;
-//     display: flex;
-//   align-items: stretch;
-}
-
-.menu__item-header_meat {
-    background-image: url(../img/bg/meateater.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
-
-.menu__item-header_vegan {
-    background-image: url(../img/bg/vegan.jpg);
-    background-position: 90% 50%;
-}
-
-.menu__item-header_diet {
-    background-image: url(../img/bg/diet.jpg);
-    background-position: 100% 50%;
+    
+    @include tablet {
+        top: 80%;
+    }
 }
 
 .menu__item-description {
-    background-color: rgba(56,58,62,.93);
-    text-align:left;
-    line-height:2;
+    background-color: rgba(56, 58, 62, .93);
+    text-align: left;
+    line-height: 2;
     overflow: hidden;
-    width:0;
+    width: 0;
 }
 
-.menu__item-header {
+.menu__item-link {
     color: #fff;
-    font-size: 40px;
+    font-size: rem(40px);
     height: 100%;
-    width:81px;
-    box-shadow: 0 0 0 128px rgba(0, 0, 0, 0.7) inset;
+    width: rem(81px); // box-shadow: 0 0 0 rem(128px) rgba(0, 0, 0, 0.7) inset;
     background-repeat: no-repeat;
-    // background-position: center center;
+    background-position: center center;
     background-size: cover;
     position: relative;
-    // flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
     padding: 0;
-    
-    
-   
 }

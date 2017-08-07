@@ -1,18 +1,25 @@
     .button {
     display: inline-flex;
     align-items: center;
-    border-radius: 5px;
+    border-radius: rem(5px);
     background-color: rgb(228, 80, 40);
-    width: 97px;
-    height: 35px;
     color: #ffffff;
     font-weight: 500;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: rem(10px) rem(20px);
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: rem(13px);
 
     &:hover {
     background-color: #c1401e;
 }
+    
+    @include phone {
+        font-size: 13px;
+        margin-right: rem(8px);
+        padding: rem(10px) rem(15px);
+         
+    }
+    
+ 
 }

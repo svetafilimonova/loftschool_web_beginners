@@ -5,6 +5,13 @@ $black:#2f3234;
 $grey:#3a3d3f;
 $red:#e25028;
 
+// resolutions
+$desktop: 1200px;
+$tablet: 768px;
+$phone:480px;
+
+// adaptive
+@import "layout/media.scss";
 //layout
 
 @import "layout/fonts.scss";

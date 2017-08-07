@@ -1,14 +1,14 @@
 .button {
   display: inline-block;
-  border-radius: 5px;
+  border-radius: rem(5px);
   background-color: #e45028;
-  width: 97px;
-  height: 35px;
+  width: rem(97px);
+  height: rem(35px);
   color: #ffffff;
   font-weight: 500;
   text-decoration: none;
-  padding: 8px 15px;
+  padding: rem(8px) rem(15px);
   text-transform: uppercase;
-  font-size: 13px; }
+  font-size: rem(13px); }
   .button:hover {
     background-color: #c1401e; }

@@ -4,7 +4,7 @@
 
 .navigation__list {
   list-style: none;
-  padding-right: 50px;
+  padding-right: rem(50px);
   position: fixed;
   top: 12%;
   right: 5%; }
@@ -13,19 +13,19 @@
   position: relative; }
 
 .navigation__list-item {
-  margin-bottom: 4px; }
+  margin-bottom: rem(4px); }
 
 .navigation__list-link:after {
   content: "";
   display: none;
   background-color: transparent;
-  border: 1px solid white;
+  border: rem(1px) solid white;
   border-radius: 50%;
-  width: 16px;
-  height: 16px;
+  width: rem(16px);
+  height: rem(16px);
   position: absolute;
-  top: 3px;
-  left: -6px; }
+  top: rem(3px);
+  left: -rem(6px); }
 
 .navigation__list-link:hover:after {
   display: block; }
