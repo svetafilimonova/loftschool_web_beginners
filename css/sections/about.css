@@ -9,35 +9,35 @@
   text-align: center;
   color: #2f3234;
   margin-top: 0;
-  padding-top: 57px; }
+  padding-top: rem(57px); }
 
 .about__description-info {
-  width: 300px;
+  width: rem(300px);
   display: inline-block;
   text-align: center;
   vertical-align: text-top;
-  margin-left: 22px; }
+  margin-left: rem(22px); }
 
 .about__description {
-  width: 1000px;
+  width: rem(1000px);
   margin: 0 auto; }
 
 .about__description-pic {
-  width: 200px;
-  height: 120px;
+  width: rem(200px);
+  height: rem(120px);
   background-repeat: no-repeat;
   background-position: center center;
   margin: 0 auto; }
 
 .about__description-title {
   font-family: 'lifehack';
-  font-size: 24px;
+  font-size: rem(24px);
   color: #2f3234;
-  margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-top: rem(15px);
+  margin-bottom: rem(15px); }
 
 .about__description-text {
   font-family: 'Ubuntu';
   font-weight: 300;
-  font-size: 14px;
+  font-size: rem(14px);
   color: #848281; }

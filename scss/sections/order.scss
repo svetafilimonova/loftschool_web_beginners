@@ -4,17 +4,39 @@
     background-position: center center;
     background-size: cover;
     position: relative;
+    justify-content: center;
 }
 
 .order__title {
     color: $yellow;
-    margin-bottom: 77px;
-    padding-top: 65px;
+    margin-bottom: rem(77px);
+    padding-top: rem(65px);
     text-align: center;
+
+ @include tablet {
+        // font-size: rem(50px);
+        margin-bottom: rem(23px);
+    }
+
+    @include phone {
+        font-size: rem(50px);
+        padding-top: rem(53px);
+    }
+
 }
 
 .order__wrapper{
     height: 75%;
+
+    @include tablet {
+        height: 90%;
+    }
+
+    @include phone {
+        height: 85%;
+        width: 100%;
+    }
+
 }
 .order__container {
      flex:1;
@@ -25,18 +47,28 @@
 
 .form {
     display: flex;
+
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+        width: 93%;
+    }
 }
 
-form {
-    // width: 100%;
-    // display:flex;
-}
 
 .form__column-left {
     display: flex;
     flex: 1;
     width: 40%;
     flex-direction: column;
+
+    @include tablet {
+        width: 80%;
+    }
+
+    @include phone {
+        width: 100%;
+    }
 }
 
 .form__column-right {
@@ -44,48 +76,91 @@ form {
     flex: 1;
     width: 40%;
     flex-direction: column; 
+
+    @include tablet {
+        width: 80%;
+    }
+
+    @include phone {
+        width: 100%;
+    }
+
 }
 
 .form__row {
     display: flex;
-    margin-bottom: 13px;
+    margin-bottom: rem(13px);
 }
 
 
 .form__label {
     flex: 1;
-    margin-right: 17px;
+    margin-right: rem(17px);
 }
 
 .form__label-title {
     color: #fff;
-    margin-bottom: 5px;
+    margin-bottom: rem(5px);
 }
 
 .form__input {
-    font-size: 14px;
-    padding: 9px;
-    border-radius: 5px;
-    border: 1px solid rgb(209, 207, 203); 
-    margin-right: 20px;
+    font-size: rem(14px);
+    padding: rem(9px);
+    border-radius: rem(5px);
+    border: rem(2px) solid rgb(209, 207, 203); 
+    margin-right: rem(20px);
     width: 100%;
+
+     &:focus {
+        border: rem(2px) solid #f9b43b;
+        outline: none;
+     }
+
+     @include tablet {
+        
+    }
+
 }
 
 .form__textarea {
     width: 95%;
-    height: 111px;
-    border: 1px solid rgb(209, 207, 203);
-    border-radius: 5px;
-    padding: 7px 9px;
+    height: rem(111px);
+    border: rem(2px) solid rgb(209, 207, 203);
+    border-radius: rem(5px);
+    padding: rem(7px) rem(9px);
     resize: none;
-    font-size: 14px;
-    
-    
+    font-size: rem(14px);
+
+    &:focus {
+        border: rem(2px) solid #f9b43b;
+        outline: none;
+    }
+
+    @include tablet {
+        width: 100%;
+    }
+
+}
+
+.form__row_textarea {
+
+    @include phone {
+        margin-bottom:rem(40px); 
+    }
 
 }
 
 .form__btn {
     border: 0; 
+    margin-right: rem(5px);
+
+     @include tablet {
+        margin-top:rem(20px); 
+    }
+
+      &:focus { 
+        outline: none;
+      }
 }
 
 .form__btn_inactive {
@@ -99,13 +174,17 @@ form {
 .form__control-title {
     display: flex;
     align-items: center;
-    margin-left: 10px;
+    margin-left: rem(10px);
     color: #fff;
 }
 
 .form__label-control {
     display: flex;
     align-items: center;
+    
+    @include phone {
+        justify-content: center;
+    }
 }
 
 .form__radio:checked+.form__radio-fake:after{
@@ -115,21 +194,21 @@ form {
 
 .form__radio-fake {
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: rem(15px);
+    height: rem(15px);
     border-radius: 50%;
     background-color: #fff;
     position: relative;
     &:after {
         content: "";
         display: none;
-        width: 7px;
-        height: 7px;
+        width: rem(7px);
+        height: rem(7px);
         border-radius: 50%;
         background-color: #e35028;
         position: absolute;
-        top: 4px;
-        left: 4px;
+        top: rem(4px);
+        left: rem(4px);
     }
 }
 
@@ -140,8 +219,8 @@ form {
 
 .form__checkbox-fake {
     display: flex;
-    width: 15px;
-    height: 15px;
+    width: rem(15px);
+    height: rem(15px);
     background-color: #fff;
     position: relative;
 
@@ -150,11 +229,11 @@ form {
        display: none;
        background-image: url(../img/logo/check.png); 
        background-repeat: no-repeat;
-       width: 15px;
-       height: 15px;
+       width: rem(15px);
+       height: rem(15px);
        position: absolute;
-       top:3px;
-       left:2px;    
+       top:rem(3px);
+       left:rem(2px);    
     }
 }
 
@@ -164,7 +243,19 @@ form {
 }
 
 .form__row_btn {
-    margin-bottom: 17px;
+    margin-bottom: rem(17px);
     width: 81%;
+
+    @include tablet {
+        margin-bottom: rem(20px);
+    }
+    @include phone {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: rem(40px);
+    }
+
+
 }
 

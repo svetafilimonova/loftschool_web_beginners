@@ -15,13 +15,30 @@
     top:0;
     bottom: 0;
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include tablet {
+        width: 100%;
+    }
 
 }
 
-.team__block-container {
-    width: 70%;
+.team__block-content{
+    
+    @include tablet {
+        text-align: center;
+        width: 85%;
+        height: 87%;
+    }
 }
+
+// .team__block-container {
+//     width: 70%;
+// }
 
 .team__block-title {
     
@@ -34,15 +51,23 @@
     transition: 0.4s;
     display: flex;
     align-items: center;
-    margin-bottom: 12px;
+    margin-bottom: rem(12px);
+
+     @include tablet {
+        width: auto;
+        font-size: rem(25px);
+    }
+
+    
+
     &:before {
         content: "";
         width: 0;
         height: 0;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-top: 6px solid #f9b43b;
-        margin-right: 10px;
+        border-left: rem(5px) solid transparent;
+        border-right: rem(5px) solid transparent;
+        border-top: rem(6px) solid #f9b43b;
+        margin-right: rem(10px);
         transition: .5s;
     }
     // &:hover:before {
@@ -51,11 +76,28 @@
 }
 
 .team__block-item {
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
+    flex-direction: column;
+    align-items: center;
+    
+
+           @include tablet {
+               display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            
+     }
 
     &.active {
         .team__description {
             height: auto;
+
+             @include tablet {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+     }
         }
 
         .team__block-title {
@@ -68,12 +110,18 @@
     }
 }
 .team__description-photo {
-   width: 100px;
-    height: 100px;
+   width: rem(100px);
+    height: rem(100px);
     border-radius: 50%;
     overflow: hidden;
-    margin-right: 21px;
+    margin-right: rem(21px);
     position: relative;
+
+        @include phone {
+        margin-right:0;
+        margin-bottom: rem(20px);
+    }
+
 }
 
 .team__description-pic {
@@ -86,7 +134,8 @@
 }
 .team__description {
     display: flex;
-    padding-left: 20px;
+    padding-left: rem(20px);
+
 }
 
 .team__block-header {
@@ -94,6 +143,17 @@
     padding-top: .9em;
     padding-bottom: .8em;
     padding-left: 1.1em;
+
+         @include tablet {
+        padding-top: rem(47px);
+        margin-bottom: rem(56px);
+    }
+
+    @include phone {
+        font-size: rem(50px);
+        margin-bottom: rem(43px);
+    }
+    
 }
 
 .team__description-job {
@@ -102,15 +162,31 @@
 }
 
 .team__description-text {
-    width: 15em;
+    // width: 15em;
+    // text-align: left;
+
+      @include tablet {
+       margin-top: rem(20px);
+       
+    }
+
+       @include phone {
+        margin-bottom: rem(20px);
+    }
+
     
 }
 
 .team__block-list {
-    padding-left: 80px;
+    padding-left: rem(80px);
+
+    @include tablet {
+        padding-left: rem(0px);
+    }
 }
 
 .team__description {
      height:0;
      overflow: hidden;
+    
 }
