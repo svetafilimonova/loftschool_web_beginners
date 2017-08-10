@@ -9,6 +9,10 @@
 
 .greeting__wrapper {
     height: 75%;
+
+       @include phone {
+            height: auto;
+        }
 }
 
 .greeting__container {
@@ -50,8 +54,12 @@
     @include tablet {
         // text-align: center;
         width:auto;
-        
     }
+
+    @include phone {
+            margin-top: rem(0px);
+            margin-left: rem(0px);
+        }
 }
 
 
@@ -62,6 +70,7 @@
 
       @include phone {
             font-size: rem(63px);
+            white-space: nowrap;
         }
 }
 

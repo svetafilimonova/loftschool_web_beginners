@@ -20,6 +20,10 @@
        height: 80%;
     }
 
+      @include phone {
+       height: auto;
+       align-items: center;
+    }
 
 }
 .section__title_color_black {
@@ -37,6 +41,8 @@
 
        @include phone {
        font-size: rem(50px);
+       padding-top: rem(0px);
+       margin-bottom: rem(90px);
     }
 
 }
@@ -54,7 +60,7 @@
      @include phone {
          display: flex;
          flex-direction: row;
-         margin-bottom: rem(50px);
+         margin-bottom: rem(0px);
     }
 }
 

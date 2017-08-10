@@ -34,8 +34,11 @@
     width: rem(16px);
     height: rem(16px);
     position: absolute;
-    top: rem(3px);
-    left: -rem(6px);
+    // top: rem(3px);
+    // left: rem(6px);
+    top: 13%;
+    left: -103%;
+    transition: .3s;
 }
 
 &:hover:after {

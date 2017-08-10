@@ -90,9 +90,10 @@ footer {
     // position: relative;
     display: flex;
     flex-direction: column;
+    
 }
 
-.text__title {
+.section__text-title {
     font-size: rem(14px);
     @include gagalin();
 }
