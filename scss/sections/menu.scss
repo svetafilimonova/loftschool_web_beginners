@@ -7,8 +7,9 @@
 
 .menu__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     height: 100%;
+    position: relative;
 }
 
 .menu__list-wrapper {
@@ -39,21 +40,22 @@
 
 .menu-title {
     color: #fff;
-    margin-left: rem(98px);
-    margin-top: rem(84px);
+    position: absolute;
+    top: 11%;
+    left: 6%;
 
 
      @include tablet {
-        margin-left: rem(16px);
-        margin-top: rem(92px);
+        // margin-left: rem(16px);
+        // margin-top: rem(92px);
        
          
     }
 
       @include phone {
          font-size:rem(50px);
-        margin-left: rem(50px);
-        margin-top: rem(46px);
+        // margin-left: rem(50px);
+        // margin-top: rem(46px);
          
     }
 }
@@ -86,7 +88,7 @@
     color: #fff;
     font-size: rem(40px);
     height: 100%;
-    width: rem(81px); // box-shadow: 0 0 0 rem(128px) rgba(0, 0, 0, 0.7) inset;
+    width: rem(79px); // box-shadow: 0 0 0 rem(128px) rgba(0, 0, 0, 0.7) inset;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -96,4 +98,9 @@
     justify-content: center;
     margin: 0;
     padding: 0;
+
+
+     @include phone {
+         width: rem(60px);
+    }
 }
