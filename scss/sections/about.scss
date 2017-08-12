@@ -112,6 +112,12 @@
     color: #2f3234;
     margin-top: rem(15px);
     margin-bottom: rem(15px);
+
+      @include phone {
+         margin: rem(0px);
+    }
+
+
 }
 
 .about__description-text {
