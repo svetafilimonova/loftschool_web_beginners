@@ -430,7 +430,7 @@ footer {
     .section__title_color_black {
       font-size: 3.125rem;
       padding-top: 0rem;
-      margin-bottom: 5.625rem; } }
+      margin-bottom: 0rem; } }
 
 .about__description-item {
   text-align: center;
@@ -846,8 +846,9 @@ footer {
   @media screen and (max-width: 480px) {
     .team__block-header {
       font-size: 3.125rem;
-      margin-bottom: 2.6875rem;
-      padding-left: 0; } }
+      margin-bottom: 0rem;
+      padding-left: 0;
+      padding-top: 0; } }
 
 .team__description-job {
   font-weight: bold;
@@ -1123,7 +1124,7 @@ footer {
     .order__title {
       font-size: 3.125rem;
       padding-top: 1.25rem;
-      margin: 0rem 3.125rem 0.6875rem; } }
+      margin: 0rem; } }
 
 .order__wrapper {
   height: 75%;
@@ -1280,7 +1281,7 @@ footer {
 
 @media screen and (max-width: 480px) {
   .form__row_textarea {
-    margin-bottom: 2.5rem; } }
+    margin-bottom: 0rem; } }
 
 .form__btn {
   border: 0;
@@ -1399,4 +1400,4 @@ footer {
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center;
-      margin-bottom: 2.5rem; } }
+      margin-bottom: 0rem; } }

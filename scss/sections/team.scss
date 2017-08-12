@@ -152,8 +152,9 @@
 
     @include phone {
         font-size: rem(50px);
-        margin-bottom: rem(43px);
+        margin-bottom: rem(0px);
          padding-left:0;
+         padding-top: 0;
     }
     
 }
