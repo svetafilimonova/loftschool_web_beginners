@@ -879,7 +879,7 @@ footer {
   background-size: cover; }
   @media screen and (max-width: 480px) {
     .menu {
-      min-height: 31.25rem; } }
+      min-height: 18.75rem; } }
 
 .menu__wrapper {
   display: -webkit-box;
