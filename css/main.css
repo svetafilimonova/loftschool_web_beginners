@@ -531,6 +531,9 @@ footer {
   color: #2f3234;
   margin-top: 0.9375rem;
   margin-bottom: 0.9375rem; }
+  @media screen and (max-width: 480px) {
+    .about__description-title {
+      margin: 0rem; } }
 
 .about__description-text {
   font-family: 'Ubuntu';
