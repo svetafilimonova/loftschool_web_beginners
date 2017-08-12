@@ -877,6 +877,9 @@ footer {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
+  @media screen and (max-width: 480px) {
+    .menu {
+      min-width: 31.25rem; } }
 
 .menu__wrapper {
   display: -webkit-box;
@@ -954,6 +957,9 @@ footer {
   @media screen and (max-width: 768px) {
     .menu__item-text {
       top: 80%; } }
+  @media screen and (max-width: 480px) {
+    .menu__item-text {
+      top: 70%; } }
 
 .menu__item-description {
   background-color: rgba(56, 58, 62, 0.93);
@@ -1281,7 +1287,7 @@ footer {
 
 @media screen and (max-width: 480px) {
   .form__row_textarea {
-    margin-bottom: 0rem; } }
+    margin-bottom: 0.625rem; } }
 
 .form__btn {
   border: 0;
@@ -1400,4 +1406,4 @@ footer {
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center;
-      margin-bottom: 0rem; } }
+      margin-bottom: 0.625rem; } }

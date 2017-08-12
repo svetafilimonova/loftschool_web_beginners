@@ -167,7 +167,7 @@
 .form__row_textarea {
 
     @include phone {
-        margin-bottom:rem(0px); 
+        margin-bottom:rem(10px); 
     }
 
 }
@@ -291,7 +291,7 @@
         width: 100%;
         align-items: center;
         justify-content: center;
-        margin-bottom: rem(0px);
+        margin-bottom: rem(10px);
     }
 
 
