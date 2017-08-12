@@ -3,6 +3,11 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+
+     @include phone {
+         min-width: rem(500px);
+     }
+
 }
 
 .menu__wrapper {
@@ -73,6 +78,10 @@
     
     @include tablet {
         top: 80%;
+    }
+
+     @include phone {
+        top: 70%;
     }
 }
 
