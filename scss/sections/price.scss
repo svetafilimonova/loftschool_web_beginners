@@ -1,0 +1,271 @@
+.price {
+   background:linear-gradient(top, #f9b43b 0%,#eb8d38 51%,#f9b43b 100%);
+   position: relative;
+   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  @include tablet {
+    //   flex-direction: column;
+  }
+}
+
+.price__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 75%;
+
+   @include tablet {
+    //   flex-direction: column;
+      height: auto;
+  }
+
+}
+
+.price__navigation {
+    position: relative;
+}
+
+.price__navigation-arrow{
+    width: rem(30px);
+    height: rem(30px);
+    
+    
+}
+
+.navigation-arrow__icon {
+    width: rem(26px);
+    height: rem(30px);
+    fill: #fff;
+    position: absolute;
+    top:50%; 
+
+        @include tablet {
+            // display: none;
+  }
+
+}
+
+.navigation-arrow__icon_left{
+    transform: rotate(90deg);
+    left: 70%;
+}
+
+.navigation-arrow__icon_right {
+    transform: rotate(-90deg);
+    left: 55%;
+}
+
+.price__content {
+    display: flex;
+    flex-direction: row;
+
+      @include tablet {
+      flex-direction: column;
+        align-items: center;
+  }
+
+
+}
+
+.price__content-picures {
+    position: relative;
+    padding-top: rem(82px);
+
+        @include tablet {
+        padding-top: rem(0px);
+  }
+
+}
+
+.price__content-photo {
+     @include tablet {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-bottom: 10px;
+   }
+}
+
+.price__image-pic{
+    max-width: 100%;
+}
+
+.price__content-hamburger {
+  border-radius: rem(5px);
+  background-color: rgb(227, 80, 40); 
+  opacity: 0.4;
+  width: rem(90px);
+  height: rem(90px); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 1%;
+  left: 7%;
+
+  @include tablet {
+       top: -23%;
+       left: 6%;
+   } 
+
+     @include phone {
+       top: -32%;
+       left: -11%;
+   } 
+
+}
+
+.content-hamburger__icon {
+    width: rem(50px);
+    height: rem(40px);
+    fill: #fff;
+    margin-bottom: rem(5px);
+}
+
+.price__content-ingredients {
+    color: #fff;
+}
+
+.price__content-kkal{
+    opacity: .5;
+    width: rem(90px);
+    height: rem(90px); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // position: relative;
+    position:absolute;
+    top: 96%;
+    left: 4%;
+    // justify-content: center;
+    
+   @include tablet {
+       top: -32%;
+       left: 80%;
+   } 
+
+        @include phone {
+           top: -40%;
+            left: 90%;
+   } 
+
+
+}
+
+.content-kkal__icon {
+     width: rem(139px);
+    height: rem(60px);
+    fill: #fff;
+   
+   
+
+}
+
+.price__content-kkal {
+    color: #fff;
+}
+
+.price__content-kkal-amount {
+    position:absolute;
+    top:27%;
+    font-size: rem(20px);
+    
+
+}
+.price__content-photo {
+    align-self: baseline;
+
+       @include tablet {
+       margin-bottom: rem(0px);
+
+}
+
+}
+// .price__content-kkal-text {
+//     opacity: .7;
+
+// }
+
+.price__content-text {
+    margin-left: rem(10px);
+    width: 50%;
+
+          @include tablet {
+            margin-left: rem(0px);
+            text-align: center;
+            width: 90%;
+  }
+
+  @include phone{
+      width: 100%;
+  }
+
+}
+
+
+.price__content-title {
+    color:#fff;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: rem(30px);
+
+    @include tablet {
+       margin-bottom: rem(0px);
+
+}
+
+   @include phone {
+       font-size: rem(50px);
+   } 
+
+}
+
+.price__content-description {
+    line-height: 1.7;
+    margin-bottom: rem(13px);
+
+        @include tablet {
+       margin-bottom: rem(0px);
+
+}
+
+}
+
+.price__content-amount {
+    color:#e35028;
+}
+
+.price__content-value {
+
+        @include phone {
+    font-size: rem(50px);
+
+}
+
+}
+.price__content-currency {
+    font-size: rem(30px);
+    margin-right: rem(20px);
+
+         @include tablet {
+       margin-right: rem(34px);
+
+}
+
+         @include phone {
+       margin-right: rem(28px);
+       font-size: rem(24px);
+
+}
+
+
+}
+
+.price__content-button {
+    padding: rem(10px) rem(15px);
+}
