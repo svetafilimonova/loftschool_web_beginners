@@ -116,6 +116,8 @@
      @include phone {
        top: -32%;
        left: -15%;
+       width: rem(70px);
+       height: rem(70px); 
    } 
 
 }
