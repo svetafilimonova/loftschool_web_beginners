@@ -114,8 +114,8 @@
    } 
 
      @include phone {
-       top: -40%;
-       left: -6%;
+       top: -32%;
+       left: -11%;
    } 
 
 }
@@ -145,8 +145,8 @@
     // justify-content: center;
     
    @include tablet {
-       top: -23%;
-       left: 83%;
+       top: -32%;
+       left: 80%;
    } 
 
         @include phone {
@@ -202,7 +202,7 @@
   }
 
   @include phone{
-      width: 95%;
+      width: 100%;
   }
 
 }
