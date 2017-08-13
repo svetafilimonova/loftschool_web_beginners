@@ -1663,7 +1663,7 @@ footer {
   @media screen and (max-width: 480px) {
     .price__content-hamburger {
       top: -32%;
-      left: -11%; } }
+      left: -15%; } }
 
 .content-hamburger__icon {
   width: 3.125rem;
