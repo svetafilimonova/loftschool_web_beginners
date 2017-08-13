@@ -12,6 +12,8 @@
     height: rem(73px);
     background-image: url(../img/logo/logo.svg);
     background-repeat: no-repeat;
+    position: relative;
+    z-index: 10;
     
     
 }
