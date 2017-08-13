@@ -1,10 +1,14 @@
+.feedback {
+    background-color: black;
+}
 .feedback__container {
     height: 100%;
-    min-height: 650px;
+    min-height: rem(650px);
 }
 
 .feedback__list {
     height: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -13,6 +17,13 @@
     width: 25%;
     height: 50%;
     position: relative;
+   
+    @include tablet{
+       width: 50%;
+       height: 25%; 
+    }
+   
+
     &:hover .feedback__text {
         opacity: 1;
     }
@@ -23,38 +34,66 @@
     height: 100%;
     filter: grayscale(100%);
     opacity: 1;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .feedback__text {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .5);
-    top: 0%;
-    left: 0%;
+    background-color: rgba(0, 0, 0, .7);
+    top: 0;
+    left: 0;
+    bottom:0;
+    right:0;
     color: #ffffff;
     opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+
+    @include tablet {
+        text-align: center;
+        font-size: rem(14px);
+        line-height: 1.2;
+    }
+
 }
 
 .feedback__text-wrapper {
-    width: 230px;
-    height: 100%;
-    margin-left: 26px;
-    line-height: 1.6;
+    width: 80%;
+    
 }
 
 .feedback__name {
-    font-size: 14px;
-    font-family: 'gagalin';
-    margin-bottom: 21px;
-    padding-top: 42px;
+
+    margin-bottom: rem(17px);
+
+     @include tablet {
+        padding-top: rem(20px);
+        margin-bottom: rem(10px);
+    }
+      @include phone {
+         font-size:rem(24px);
+         
+    }
 }
 
 .feedback__comment {
-    font-size: 14px;
-    font-family: 'Ubuntu';
-    font-weight: 300;
-    margin-bottom: 3em;
+    
+    margin-bottom:rem(12px);
+
+ @include tablet {
+         line-height: 1.7;  
+         text-align: center;
+    }
+
+     @include phone {
+         display:none;    
+    }
 }
 
 .feedback__link {
@@ -63,18 +102,22 @@
     text-align: center;
     display: inline-block;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: rem(13px);
     font-family: 'Ubuntu';
     font-weight: 500;
     background-color: #2f3234;
-    border-radius: 5px;
-    width: 110px;
-    height: 35px;
-    padding: 6px 13px;
+    border-radius: rem(5px);
+    padding: rem(10px) rem(15px);
     text-align: center;
     vertical-align: middle;
     &:hover {
         background-color: #1f2122;
+    }
+
+    @include phone {
+         font-size:rem(13px);
+         margin-top:rem(20px)
+         
     }
 }
 
@@ -82,50 +125,21 @@
     opacity: 1;
 }
 
-.feedback__photo-one {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 36% 48%;
+
+.feedback__btn-text {
+
+     @include phone {
+     display: none;
+ }
 }
 
-.feedback__photo-two {
-    background-position: 56% 27%;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.feedback__btn-mob {
+    display: none;
+
+ @include phone {
+     display:inline-block;
+ }
+
 }
 
-.feedback__photo-three {
-    background-position: 55% 18%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.feedback__photo-four {
-    background-position: 98% 36%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.feedback__photo-five {
-    background-position: 3% 1%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.feedback__photo-six {
-    background-position: 71% 0%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.feedback__photo-seven {
-    background-position: 36% 48%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.feedback__photo-eight {
-    background-position: 100% 32%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}

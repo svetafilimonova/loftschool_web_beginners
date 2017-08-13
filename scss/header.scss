@@ -1,76 +1,106 @@
 .header {
     display: flex;
+    align-items: center;
     justify-content: space-around;
     padding-top: 1em;
-    align-items: baseline;
+    
     
    
     .header__logo {
-    display: inline-block;
-    width: 95px;
-    height: 73px;
-    background-image: url(../img/logo/logo.png);
+    display: inline-flex;
+    width: rem(95px);
+    height: rem(73px);
+    background-image: url(../img/logo/logo.svg);
     background-repeat: no-repeat;
-    vertical-align: middle;
-    margin-right: 180px;
+    position: relative;
+    z-index: 10;
+    
+    
 }
 
 
 }
 
 
-    .menu__list {
-    list-style: none;
+    .nav-menu__list {
+    display: flex;
+    align-items: center;
 
-    .menu__item {
-    display: inline-block;
-    margin-right: 10px;
+     @include tablet {
+        display: none;
+    }
+
+    .nav-menu__item {
+    display: flex;
+    align-items: center;
+    
 
     &:after {
     content: "";
-    display: inline-block;
-    width: 4px;
-    height: 4px;
+    width: rem(4px);
+    height: rem(4px);
     border-radius: 50%;
     background-color: white;
-    text-align: center;
-    vertical-align: middle;
-    margin-left: 14px;
+    margin:0 rem(16px);
 }
 
 &:last-child:after {
     display: none;
+    
 }
 
-.menu__link {
+&:last-child {
+    margin-right: rem(13px);
+}
+
+.nav-menu__link {
     text-decoration: none;
     font-weight: 500;
-    font-size: 13px;
+    font-size: rem(13px);
     color: #ffffff;
     text-transform: uppercase;
-}
-
-}
-
-}
-
-
-    .button__link {
-    display: inline-block;
-    border-radius: 5px;
-    background-color: rgb(228, 80, 40);
-    width: 97px;
-    height: 35px;
-    color: #ffffff;
-    font-weight: 500;
-    text-decoration: none;
-    padding: 8px 15px;
-    text-transform: uppercase;
-    font-size: 13px;
+    border-bottom: rem(1px) solid transparent;
+    transition: .3s;
 
     &:hover {
-    background-color: #c1401e;
+        border-bottom: rem(1px) solid #fff;
+    }
 }
+
+}
+
 }
 
 
+
+.header__btns {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.ham-button {
+    height: rem(30px);
+    width: rem(30px);
+    background: transparent;
+    border: rem(0px);
+    margin-left: rem(26px);
+    display: none;
+
+
+    .ham-button__layer{
+        width: rem(23px);
+        height: rem(4px);
+        display: block;
+        background:#fff;
+        border-radius: rem(2px);
+        margin:rem(5px) 0; 
+       
+  
+    }
+
+    @include tablet {
+        display: block;
+        margin-right: rem(26px);
+    }
+}

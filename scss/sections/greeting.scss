@@ -3,51 +3,91 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    position: relative;
 
 }
 
+.greeting__wrapper {
+    height: 75%;
+
+       @include phone {
+            height: auto;
+        }
+}
+
+.greeting__container {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .greeting__content {
 
     display: flex;
     align-items: center;
     justify-content: center;
 
+       @include tablet {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 20%;
+         
+    }
 
+        @include phone {
+            padding: 0;
+        }
 }
-.greeting__content-picture {
-    background-image: url(../img/bg/drops.png);
-    background-repeat: no-repeat;
-    width: 456px;
-    height: 418px;
- 
 
+
+.greeting__image-pic {
+    max-width: 100%;
 }
 
 .greeting__content-text {
 
     width: 50%;
-    margin-top: 55px;
-    margin-left: 9px;
+    margin-top: rem(55px);
+    margin-left: rem(9px);
+
+    @include tablet {
+        // text-align: center;
+        width:auto;
+    }
+
+    @include phone {
+            margin-top: rem(0px);
+            margin-left: rem(0px);
+        }
 }
 
 
 
 .section__title_orange {
     color: #f9b43b;
-    margin-bottom: 3px;
+    margin-bottom: rem(9px);
+
+      @include phone {
+            font-size: rem(63px);
+            white-space: nowrap;
+        }
 }
 
 .section__title_white {
-    font-size: 65px;
+    font-size: rem(65px);
     color: #ffffff;
     line-height: 1;
+
+     @include phone {
+            font-size: rem(54px);
+        }
+
 }
 
 .arrow {
-    // background-image: url(../img/icons/arrow-scroll.png);
-    background-repeat: no-repeat;
-    width: 45px;
-    height: 25px;
+    width: rem(45px);
+    height: rem(25px);
     display: inline-block;
     position: absolute;
     left: 50%;
@@ -58,7 +98,7 @@
     fill: white;
      left: 50%;
     top: 95%;
-    width: 33px;
-    height: 29px;
+    width: rem(33px);
+    height: rem(29px);
     
 }

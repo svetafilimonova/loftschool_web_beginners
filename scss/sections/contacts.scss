@@ -1,0 +1,89 @@
+.contacts {
+    background-image: url(../img/bg/map.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position:relative;
+    display: flex;
+}
+
+.footer {
+    background-color: #111111;
+    position: absolute;
+    bottom:0;
+}
+
+.footer__container {
+    display: flex;
+    width:90%;
+    margin: 0 auto;
+
+     @include phone {
+        flex-direction: column;
+    }
+
+    
+}
+.footer__info {
+    font-family:'Ubuntu', sans-serif;
+    font-size: rem(14px);
+    color:#fff;
+    width:50%;
+    text-align: left;
+    padding:rem(7px) rem(13px) rem(13px);
+
+    @include phone {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+.footer__address {
+    margin-bottom: rem(5px);
+
+    @include phone {
+        margin-bottom: rem(10px);
+    }
+}
+.footer__phone {
+    color:$orange;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+     @include phone {
+        justify-content: center;
+    }
+}
+.phone-icon {
+   fill: $orange;
+   width: rem(11px);
+   height: rem(11px);
+   margin-right: rem(10px);
+
+}
+
+.footer__socials{
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+     @include phone {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: rem(15px);
+    }
+}
+.social-icon {
+    fill: #fff;
+    width: rem(20px);
+    height: rem(20px);
+    opacity: .3;
+    transition: .3s;
+    margin-right: rem(20px);
+
+    &:hover{
+        opacity:1;
+    }
+}

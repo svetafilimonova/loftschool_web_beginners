@@ -4,34 +4,34 @@
 .greeting__content-picture {
   background-image: url(../img/bg/drops.png);
   background-repeat: no-repeat;
-  width: 456px;
-  height: 418px;
+  width: rem(456px);
+  height: rem(418px);
   display: inline-block;
   vertical-align: middle;
-  margin-left: 20px; }
+  margin-left: rem(20px); }
 
 .greeting__content-text {
   display: inline-block;
   vertical-align: middle;
   width: 50%;
-  margin-top: 55px;
-  margin-left: 9px; }
+  margin-top: rem(55px);
+  margin-left: rem(9px); }
 
 .section__title_orange {
   color: #f9b43b;
-  margin-bottom: 3px; }
+  margin-bottom: rem(3px); }
 
 .section__title_white {
   font-family: 'lifehack';
-  font-size: 65px;
+  font-size: rem(65px);
   color: #ffffff;
   line-height: 1; }
 
 .arrow {
   background-image: url(../img/icons/arrow-scroll.png);
   background-repeat: no-repeat;
-  width: 45px;
-  height: 25px;
+  width: rem(45px);
+  height: rem(25px);
   display: inline-block;
   position: absolute;
   left: 50%;

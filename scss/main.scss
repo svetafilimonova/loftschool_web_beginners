@@ -1,10 +1,43 @@
+//variables
+$orange: #e45028;
+$yellow:#f9b43b;
+$black:#2f3234;
+$grey:#3a3d3f;
+$red:#e25028;
+
+// resolutions
+$desktop: 1200px;
+$tablet: 768px;
+$phone:480px;
+
+// adaptive
+@import "layout/media.scss";
+//layout
+
 @import "layout/fonts.scss";
 @import "layout/base.scss";
-@import "menu.scss";
+
+//common
+@import "common/btn.scss";
+
+//blocks
+
+@import "fixedmenu.scss";
 @import "header.scss";
+
+
+//sections
 @import "sections/greeting.scss";
 @import "sections/about.scss";
 @import "sections/feedback.scss";
+@import "sections/team.scss";
+@import "sections/menu.scss";
+@import "sections/contacts.scss";
+@import "sections/order.scss";
+@import "sections/hamburger.scss";
+@import "sections/price.scss";
+
+
 
 
 

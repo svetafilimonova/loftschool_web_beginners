@@ -1,0 +1,115 @@
+.menu {
+    background-image: url(../img/bg/menu.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+     @include phone {
+         min-height: rem(300px);
+     }
+
+}
+
+.menu__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    position: relative;
+}
+
+.menu__list-wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+.menu__list {
+    display: flex;
+    min-height: 100vh;
+    max-height: 100vh;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.menu__item {
+    display: flex;
+    cursor: pointer;
+    &.active {
+        .menu__item-description {
+            width: rem(540px);
+            padding-top: rem(64px);
+            padding-left: rem(30px);
+        }
+    }
+}
+
+.menu-title {
+    color: #fff;
+    position: absolute;
+    top: 11%;
+    left: 6%;
+
+
+     @include tablet {
+        // margin-left: rem(16px);
+        // margin-top: rem(92px);
+       
+         
+    }
+
+      @include phone {
+         font-size:rem(50px);
+        // margin-left: rem(50px);
+        // margin-top: rem(46px);
+         
+    }
+}
+
+.menu__item-text {
+    transform: rotate(-90deg) translateX(-50%) translateY(-50%);
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0 0;
+    margin-top: -1.25rem;
+    
+    @include tablet {
+        top: 80%;
+    }
+
+     @include phone {
+        top: 70%;
+    }
+}
+
+.menu__item-description {
+    background-color: rgba(56, 58, 62, .93);
+    text-align: left;
+    line-height: 2;
+    overflow: hidden;
+    width: 0;
+}
+
+.menu__item-link {
+    color: #fff;
+    font-size: rem(40px);
+    height: 100%;
+    width: rem(79px); // box-shadow: 0 0 0 rem(128px) rgba(0, 0, 0, 0.7) inset;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+
+     @include phone {
+         width: rem(60px);
+    }
+}

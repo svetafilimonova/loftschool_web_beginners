@@ -1,0 +1,14 @@
+.button {
+  display: inline-block;
+  border-radius: rem(5px);
+  background-color: #e45028;
+  width: rem(97px);
+  height: rem(35px);
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  padding: rem(8px) rem(15px);
+  text-transform: uppercase;
+  font-size: rem(13px); }
+  .button:hover {
+    background-color: #c1401e; }
