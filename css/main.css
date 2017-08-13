@@ -1696,12 +1696,12 @@ footer {
   left: 4%; }
   @media screen and (max-width: 768px) {
     .price__content-kkal {
-      top: -32%;
-      left: 80%; } }
+      top: -23%;
+      left: 83%; } }
   @media screen and (max-width: 480px) {
     .price__content-kkal {
-      top: -40%;
-      left: 90%; } }
+      top: -32%;
+      left: 80%; } }
 
 .content-kkal__icon {
   width: 8.6875rem;
