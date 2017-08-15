@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+ 
     $('.ham-button').on('click', function(e){
     e.preventDefault()
         $('.hamburger-menu').fadeIn(2000);   

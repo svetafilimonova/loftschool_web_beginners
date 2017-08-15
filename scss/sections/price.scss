@@ -86,7 +86,7 @@
        display: flex;
        justify-content: center;
        align-items: center;
-       margin-bottom: 10px;
+       margin-bottom: rem(10px);
    }
 }
 
@@ -106,7 +106,8 @@
   justify-content: center;
   position: absolute;
   top: 1%;
-  left: 7%;
+  left: 7%; 
+  transition: .3s;
 
   @include tablet {
        top: -23%;
@@ -131,6 +132,12 @@
 
 .price__content-ingredients {
     color: #fff;
+}
+
+.price__content-ingredients-link{
+    text-decoration: none;
+    color: #fff;
+    display: block;
 }
 
 .price__content-kkal{
@@ -265,9 +272,92 @@
 
 }
 
+}
+.price__content-popup {
+    
+         &:hover .price__content-ingredients-list{
+        display: block;
+  }
+        &:hover .price__content-hamburger{
+        background-color: #e35028;
+        opacity: 1;
+
+
+  }
+}
+
+.price__content-ingredients-list {
+    background-color: rgba(255, 255, 255, .9);;
+    border-radius: rem(5px);
+    width: rem(270px);
+    padding: rem(14px) rem(0px);
+    position: absolute;
+    transform: translateY(-78px) translateX(123px);
+    display: none;
+    transition: .3s;
+
+    @include tablet {
+        transform: translateY(-78px) translateX(115px);
+    }
+
+      @include phone {
+        transform: translateY(-78px) translateX(115px);
+    }
+
+
+}
+
+.price__content-ingredients-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
 }
 
 .price__content-button {
     padding: rem(10px) rem(15px);
 }
+
+.price__content-ingredients-product{
+    font-weight: 500;
+    color:#2f3234;
+    // margin-right: 70px;
+}
+
+.price__content-ingredients-gram{
+   color:#2f3234; 
+   font-weight: 400;
+}
+
+.price__content-ingredients-icon{
+    // margin: 0 25px; 
+}
+.ingredients-list__icon {
+    width: rem(45px);
+    height: rem(45px);
+}
+
+.ingredients-beef__icon{
+    fill: #e25028;
+}
+
+.ingredients-buns__icon{
+    fill: #f8b43a;
+}
+
+.ingredients-salad__icon{
+    fill: #8ac03e;
+}
+
+.ingredients-sauce__icon{
+    fill: #e25028;
+}
+
+.ingredients-cucumber__icon{
+    fill: #8ac03e;
+}
+
+.ingredients-cheese__icon{
+    fill: #f8b642;
+}
+
