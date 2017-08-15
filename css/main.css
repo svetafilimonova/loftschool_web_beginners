@@ -1511,7 +1511,7 @@ footer {
     transform: rotate(-45deg); }
 
 .price {
-  background: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(0%, #f9b43b), color-stop(51%, #eb8d38), to(#f9b43b));
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9b43b), color-stop(51%, #eb8d38), to(#f9b43b));
   background: -webkit-linear-gradient(top, #f9b43b 0%, #eb8d38 51%, #f9b43b 100%);
   background: -o-linear-gradient(top, #f9b43b 0%, #eb8d38 51%, #f9b43b 100%);
   background: linear-gradient(top, #f9b43b 0%, #eb8d38 51%, #f9b43b 100%);
@@ -1626,7 +1626,7 @@ footer {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 10px; } }
+    margin-bottom: 0.625rem; } }
 
 .price__image-pic {
   max-width: 100%; }
@@ -1656,7 +1656,10 @@ footer {
   justify-content: center;
   position: absolute;
   top: 1%;
-  left: 7%; }
+  left: 7%;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
   @media screen and (max-width: 768px) {
     .price__content-hamburger {
       top: -23%;
@@ -1676,6 +1679,11 @@ footer {
 
 .price__content-ingredients {
   color: #fff; }
+
+.price__content-ingredients-link {
+  text-decoration: none;
+  color: #fff;
+  display: block; }
 
 .price__content-kkal {
   opacity: .5;
@@ -1776,5 +1784,79 @@ footer {
       margin-right: 1.75rem;
       font-size: 1.5rem; } }
 
+.price__content-popup:hover .price__content-ingredients-list {
+  display: block; }
+
+.price__content-popup:hover .price__content-hamburger {
+  background-color: #e35028;
+  opacity: 1; }
+
+.price__content-ingredients-list {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0.3125rem;
+  width: 16.875rem;
+  padding: 0.875rem 0rem;
+  position: absolute;
+  -webkit-transform: translateY(-78px) translateX(123px);
+  -ms-transform: translateY(-78px) translateX(123px);
+  transform: translateY(-78px) translateX(123px);
+  display: none;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+  @media screen and (max-width: 768px) {
+    .price__content-ingredients-list {
+      -webkit-transform: translateY(-78px) translateX(115px);
+      -ms-transform: translateY(-78px) translateX(115px);
+      transform: translateY(-78px) translateX(115px); } }
+  @media screen and (max-width: 480px) {
+    .price__content-ingredients-list {
+      -webkit-transform: translateY(-78px) translateX(115px);
+      -ms-transform: translateY(-78px) translateX(115px);
+      transform: translateY(-78px) translateX(115px); } }
+
+.price__content-ingredients-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 .price__content-button {
   padding: 0.625rem 0.9375rem; }
+
+.price__content-ingredients-product {
+  font-weight: 500;
+  color: #2f3234; }
+
+.price__content-ingredients-gram {
+  color: #2f3234;
+  font-weight: 400; }
+
+.ingredients-list__icon {
+  width: 2.8125rem;
+  height: 2.8125rem; }
+
+.ingredients-beef__icon {
+  fill: #e25028; }
+
+.ingredients-buns__icon {
+  fill: #f8b43a; }
+
+.ingredients-salad__icon {
+  fill: #8ac03e; }
+
+.ingredients-sauce__icon {
+  fill: #e25028; }
+
+.ingredients-cucumber__icon {
+  fill: #8ac03e; }
+
+.ingredients-cheese__icon {
+  fill: #f8b642; }
