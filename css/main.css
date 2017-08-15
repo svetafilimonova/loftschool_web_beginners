@@ -1815,11 +1815,11 @@ footer {
       transform: translateY(-78px) translateX(115px); } }
   @media screen and (max-width: 480px) {
     .price__content-ingredients-list {
-      -webkit-transform: translateY(-3.75rem) translateX(1.5rem);
-      -ms-transform: translateY(-3.75rem) translateX(1.5rem);
-      transform: translateY(-3.75rem) translateX(1.5rem);
-      width: 16.875rem;
-      padding: 0.875rem 0rem; } }
+      -webkit-transform: translateY(-60px) translateX(24px);
+      -ms-transform: translateY(-60px) translateX(24px);
+      transform: translateY(-60px) translateX(24px);
+      padding: 0.625rem 0rem;
+      width: 14.375rem; } }
 
 .price__content-ingredients-item {
   display: -webkit-box;
@@ -1873,3 +1873,7 @@ footer {
   top: -22%;
   right: 28%;
   z-index: 10; }
+  @media screen and (max-width: 480px) {
+    .ingredients-list__close {
+      top: -28%;
+      right: 13%; } }
