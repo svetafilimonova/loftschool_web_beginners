@@ -301,7 +301,7 @@
     }
 
       @include phone {
-        transform: translateY(-60px) translateX(24px);
+        transform: translateY(rem(-60px)) translateX(rem(24px));
     }
 
 
