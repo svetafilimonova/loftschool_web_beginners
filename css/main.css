@@ -1511,7 +1511,7 @@ footer {
     transform: rotate(-45deg); }
 
 .price {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f9b43b), color-stop(51%, #eb8d38), to(#f9b43b));
+  background: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(0%, #f9b43b), color-stop(51%, #eb8d38), to(#f9b43b));
   background: -webkit-linear-gradient(top, #f9b43b 0%, #eb8d38 51%, #f9b43b 100%);
   background: -o-linear-gradient(top, #f9b43b 0%, #eb8d38 51%, #f9b43b 100%);
   background: linear-gradient(top, #f9b43b 0%, #eb8d38 51%, #f9b43b 100%);
@@ -1811,9 +1811,9 @@ footer {
       transform: translateY(-78px) translateX(115px); } }
   @media screen and (max-width: 480px) {
     .price__content-ingredients-list {
-      -webkit-transform: translateY(-78px) translateX(115px);
-      -ms-transform: translateY(-78px) translateX(115px);
-      transform: translateY(-78px) translateX(115px); } }
+      -webkit-transform: translateY(-60px) translateX(24px);
+      -ms-transform: translateY(-60px) translateX(24px);
+      transform: translateY(-60px) translateX(24px); } }
 
 .price__content-ingredients-item {
   display: -webkit-box;
