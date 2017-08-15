@@ -255,7 +255,9 @@
         transform: translateY(-78px) translateX(115px);
     }
     @include phone {
-        transform: translateY(-3.90rem) translateX(rem(24px));
+        // transform: translateY(-3.90rem) translateX(rem(24px));
+        top: rem(18px);
+        left: rem(-99px);
         padding: rem(10px) rem(0px);
         width: rem(230px);
     }
