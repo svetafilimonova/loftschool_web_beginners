@@ -255,9 +255,9 @@
         transform: translateY(-78px) translateX(115px);
     }
     @include phone {
-        transform: translateY(rem(-60px)) translateX(rem(24px));
-        width: rem(270px);
-        padding: rem(14px) rem(0px);
+        transform: translateY(-60px) translateX(24px);
+        padding: rem(10px) rem(0px);
+        width: rem(230px);
     }
 }
 
@@ -316,4 +316,9 @@
     top: -22%;
     right: 28%;
     z-index: 10;
+
+    @include phone {
+    top: -28%;
+    right: 13%;
+    }
 }
