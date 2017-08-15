@@ -1791,6 +1791,10 @@ footer {
   background-color: #e35028;
   opacity: 1; }
 
+@media screen and (max-width: 768px) {
+  .price__content-popup:hover .ingredients-list__close {
+    display: block; } }
+
 .price__content-ingredients-list {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 0.3125rem;
@@ -1813,7 +1817,9 @@ footer {
     .price__content-ingredients-list {
       -webkit-transform: translateY(-3.75rem) translateX(1.5rem);
       -ms-transform: translateY(-3.75rem) translateX(1.5rem);
-      transform: translateY(-3.75rem) translateX(1.5rem); } }
+      transform: translateY(-3.75rem) translateX(1.5rem);
+      width: 16.875rem;
+      padding: 0.875rem 0rem; } }
 
 .price__content-ingredients-item {
   display: -webkit-box;
@@ -1860,3 +1866,10 @@ footer {
 
 .ingredients-cheese__icon {
   fill: #f8b642; }
+
+.ingredients-list__close {
+  display: none;
+  position: absolute;
+  top: -22%;
+  right: 28%;
+  z-index: 10; }
