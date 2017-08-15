@@ -1815,8 +1815,8 @@ footer {
       transform: translateY(-78px) translateX(115px); } }
   @media screen and (max-width: 480px) {
     .price__content-ingredients-list {
-      top: 1.125rem;
-      left: -6.1875rem;
+      top: 3vh;
+      left: -24.5vw;
       padding: 0.625rem 0rem;
       width: 14.375rem; } }
 
