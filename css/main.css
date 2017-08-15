@@ -1815,9 +1815,9 @@ footer {
       transform: translateY(-78px) translateX(115px); } }
   @media screen and (max-width: 480px) {
     .price__content-ingredients-list {
-      -webkit-transform: translateY(-3.75rem) translateX(1.5rem);
-      -ms-transform: translateY(-3.75rem) translateX(1.5rem);
-      transform: translateY(-3.75rem) translateX(1.5rem);
+      -webkit-transform: translateY(-3.9rem) translateX(1.5rem);
+      -ms-transform: translateY(-3.9rem) translateX(1.5rem);
+      transform: translateY(-3.9rem) translateX(1.5rem);
       padding: 0.625rem 0rem;
       width: 14.375rem; } }
 
@@ -1875,5 +1875,5 @@ footer {
   z-index: 10; }
   @media screen and (max-width: 480px) {
     .ingredients-list__close {
-      top: -57px;
-      right: 35px; } }
+      top: -3.7rem;
+      right: 3.4rem; } }
