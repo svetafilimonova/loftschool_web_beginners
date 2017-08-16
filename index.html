@@ -160,13 +160,78 @@
                     </div>
                 </div>
                 <div class="price__content">
-                    <div class="price__content-picures">
+                    <div class="price__content-pictures">
+                         <div class="price__content-popup"> 
+                             <a href="#" class="price__content-ingredients-link">
                     <div class="price__content-hamburger">
                         <svg class="content-hamburger__icon">
                             <use xlink:href="img/sprite/sprite.svg#burger"></use>
                         </svg>
                         <span class="price__content-ingredients section__text-title ">Состав</span>
-                    </div>
+                        </div>
+                        </a>
+                             <div class="price__content-ingredients-wrapper"> 
+                         <a href="#" class="ingredients-list__close">
+                            <img src="img/icons/close.svg" alt="close">
+                            </a>        
+                        <ul class="price__content-ingredients-list">
+                            <li class="price__content-ingredients-item">
+                                <div class="price__content-ingredients-icon">
+                                     <svg class="ingredients-list__icon ingredients-beef__icon">
+                            <use xlink:href="img/sprite/sprite.svg#beef"></use>
+                                    </svg>
+                                </div>
+                                <span class="price__content-ingredients-product section__text ">Говядина</span>
+                                <span class="price__content-ingredients-gram section__text ">300г</span>
+                            </li>
+                            <li class="price__content-ingredients-item">
+                                <div class="price__content-ingredients-icon">
+                                     <svg class="ingredients-list__icon  ingredients-buns__icon">
+                            <use xlink:href="img/sprite/sprite.svg#buns"></use>
+                                    </svg>
+                                </div>
+                                <span class="price__content-ingredients-product section__text ">Булочки</span>
+                                <span class="price__content-ingredients-gram section__text ">100г</span>
+                            </li>
+                            <li class="price__content-ingredients-item">
+                                <div class="price__content-ingredients-icon">
+                                     <svg class=" ingredients-list__icon ingredients-salad__icon">
+                            <use xlink:href="img/sprite/sprite.svg#salad"></use>
+                                    </svg>
+                                </div>
+                                <span class="price__content-ingredients-product section__text ">Зелень</span>
+                                <span class="price__content-ingredients-gram section__text ">70г</span>
+                            </li>
+                            <li class="price__content-ingredients-item">
+                                <div class="price__content-ingredients-icon">
+                                     <svg class="ingredients-list__icon  ingredients-sauce__icon">
+                            <use xlink:href="img/sprite/sprite.svg#sauce"></use>
+                                    </svg>
+                                </div>
+                                <span class="price__content-ingredients-product section__text ">Соус</span>
+                                <span class="price__content-ingredients-gram section__text ">150г</span>
+                            </li>
+                            <li class="price__content-ingredients-item">
+                                <div class="price__content-ingredients-icon">
+                                     <svg class="ingredients-list__icon  ingredients-cucumber__icon">
+                            <use xlink:href="img/sprite/sprite.svg#cucumber"></use>
+                                    </svg>
+                                </div>
+                                <span class="price__content-ingredients-product section__text ">Овощи</span>
+                                <span class="price__content-ingredients-gram section__text ">200г</span>
+                            </li>
+                            <li class="price__content-ingredients-item">
+                                <div class="price__content-ingredients-icon">
+                                     <svg class="ingredients-list__icon ingredients-cheese__icon">
+                            <use xlink:href="img/sprite/sprite.svg#cheese"></use>
+                                    </svg>
+                                </div>
+                                <span class="price__content-ingredients-product section__text ">Сыр</span>
+                                <span class="price__content-ingredients-gram section__text ">80г</span>
+                            </li>
+                        </ul>
+                        </div>
+                     </div> 
                     <div class="price__content-kkal">
                         <svg class="content-kkal__icon">
                             <use xlink:href="img/sprite/sprite.svg#kkal"></use>
@@ -614,7 +679,7 @@
                 </div>
         </section>
         <section class="section contacts">
-
+            <div class="contacts__map" id="map"></div>
             <footer class="footer">
                 <div class="footer__container">
                     <div class="footer__info">
@@ -685,6 +750,9 @@
             </li>
         </ul>
     </nav>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

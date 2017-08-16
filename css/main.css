@@ -155,8 +155,8 @@ footer {
     content: "";
     display: inline-block;
     border-radius: 50%;
-    width: 0.375rem;
-    height: 0.375rem;
+    width: 6px;
+    height: 6px;
     background-color: white; }
   .navigation__list-link:after {
     content: "";
@@ -164,8 +164,8 @@ footer {
     background-color: transparent;
     border: 0.0625rem solid white;
     border-radius: 50%;
-    width: 1rem;
-    height: 1rem;
+    width: 16px;
+    height: 16px;
     position: absolute;
     top: 13%;
     left: -103%;
@@ -1000,7 +1000,6 @@ footer {
       width: 3.75rem; } }
 
 .contacts {
-  background-image: url(../img/bg/map.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1009,6 +1008,10 @@ footer {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+
+.contacts__map {
+  width: 100%;
+  height: 100%; }
 
 .footer {
   background-color: #111111;
@@ -1351,16 +1354,16 @@ footer {
 
 .form__radio-fake {
   display: inline-block;
-  width: 0.9375rem;
-  height: 0.9375rem;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background-color: #fff;
   position: relative; }
   .form__radio-fake:after {
     content: "";
     display: none;
-    width: 0.4375rem;
-    height: 0.4375rem;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     background-color: #e35028;
     position: absolute;
@@ -1458,7 +1461,8 @@ footer {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  height: 90%; }
 
 .hamburger-menu__item {
   position: relative;
@@ -1510,7 +1514,7 @@ footer {
     transform: rotate(-45deg); }
 
 .price {
-  background: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(0%, #f9b43b), color-stop(51%, #eb8d38), to(#f9b43b));
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9b43b), color-stop(51%, #eb8d38), to(#f9b43b));
   background: -webkit-linear-gradient(top, #f9b43b 0%, #eb8d38 51%, #f9b43b 100%);
   background: -o-linear-gradient(top, #f9b43b 0%, #eb8d38 51%, #f9b43b 100%);
   background: linear-gradient(top, #f9b43b 0%, #eb8d38 51%, #f9b43b 100%);
@@ -1604,12 +1608,26 @@ footer {
       -ms-flex-align: center;
       align-items: center; } }
 
-.price__content-picures {
+.price__content-pictures {
   position: relative;
   padding-top: 5.125rem; }
   @media screen and (max-width: 768px) {
-    .price__content-picures {
+    .price__content-pictures {
       padding-top: 0rem; } }
+
+.price__content-popup {
+  z-index: 10;
+  position: absolute;
+  top: 2%;
+  left: 6%; }
+  @media screen and (max-width: 768px) {
+    .price__content-popup {
+      top: -23%;
+      left: 5%; } }
+  @media screen and (max-width: 480px) {
+    .price__content-popup {
+      top: -30%;
+      left: -13%; } }
 
 @media screen and (max-width: 768px) {
   .price__content-photo {
@@ -1625,7 +1643,7 @@ footer {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 10px; } }
+    margin-bottom: 0.625rem; } }
 
 .price__image-pic {
   max-width: 100%; }
@@ -1653,17 +1671,13 @@ footer {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  position: absolute;
-  top: 1%;
-  left: 7%; }
-  @media screen and (max-width: 768px) {
-    .price__content-hamburger {
-      top: -23%;
-      left: 6%; } }
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
   @media screen and (max-width: 480px) {
     .price__content-hamburger {
-      top: -32%;
-      left: -11%; } }
+      width: 4.375rem;
+      height: 4.375rem; } }
 
 .content-hamburger__icon {
   width: 3.125rem;
@@ -1673,6 +1687,11 @@ footer {
 
 .price__content-ingredients {
   color: #fff; }
+
+.price__content-ingredients-link {
+  text-decoration: none;
+  color: #fff;
+  display: block; }
 
 .price__content-kkal {
   opacity: .5;
@@ -1692,16 +1711,16 @@ footer {
   -ms-flex-align: center;
   align-items: center;
   position: absolute;
-  top: 96%;
-  left: 4%; }
+  top: 98%;
+  left: 3%; }
   @media screen and (max-width: 768px) {
     .price__content-kkal {
-      top: -32%;
-      left: 80%; } }
+      top: -23%;
+      left: 83%; } }
   @media screen and (max-width: 480px) {
     .price__content-kkal {
-      top: -40%;
-      left: 90%; } }
+      top: -30%;
+      left: 84%; } }
 
 .content-kkal__icon {
   width: 8.6875rem;
@@ -1773,5 +1792,85 @@ footer {
       margin-right: 1.75rem;
       font-size: 1.5rem; } }
 
+.price__content-popup:hover .price__content-ingredients-list {
+  display: block; }
+
+.price__content-popup:hover .price__content-hamburger {
+  background-color: #e35028;
+  opacity: 1; }
+
+@media screen and (max-width: 768px) {
+  .price__content-popup:hover .ingredients-list__close {
+    display: block; } }
+
+.price__content-ingredients-wrapper {
+  position: absolute;
+  top: 0%;
+  left: 100%; }
+
+.price__content-ingredients-list {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0.3125rem;
+  width: 16.875rem;
+  padding: 0.875rem 0rem;
+  display: none;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+  @media screen and (max-width: 480px) {
+    .price__content-ingredients-list {
+      padding: 0.625rem 0rem;
+      width: 14.375rem; } }
+
+.price__content-ingredients-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 .price__content-button {
   padding: 0.625rem 0.9375rem; }
+
+.price__content-ingredients-product {
+  font-weight: 500;
+  color: #2f3234; }
+
+.price__content-ingredients-gram {
+  color: #2f3234;
+  font-weight: 400; }
+
+.ingredients-list__icon {
+  width: 2.8125rem;
+  height: 2.8125rem; }
+
+.ingredients-beef__icon {
+  fill: #e25028; }
+
+.ingredients-buns__icon {
+  fill: #f8b43a; }
+
+.ingredients-salad__icon {
+  fill: #8ac03e; }
+
+.ingredients-sauce__icon {
+  fill: #e25028; }
+
+.ingredients-cucumber__icon {
+  fill: #8ac03e; }
+
+.ingredients-cheese__icon {
+  fill: #f8b642; }
+
+.ingredients-list__close {
+  display: none;
+  position: absolute;
+  top: 1%;
+  right: 2%;
+  z-index: 20; }

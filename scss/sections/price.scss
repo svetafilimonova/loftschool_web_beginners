@@ -1,39 +1,34 @@
 .price {
-   background:linear-gradient(top, #f9b43b 0%,#eb8d38 51%,#f9b43b 100%);
-   position: relative;
-   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-
-  @include tablet {
-    //   flex-direction: column;
-  }
+    background: linear-gradient(top, #f9b43b 0%, #eb8d38 51%, #f9b43b 100%);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    @include tablet {
+        //   flex-direction: column;
+    }
 }
 
 .price__wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 75%;
-
-   @include tablet {
-    //   flex-direction: column;
-      height: auto;
-  }
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    @include tablet {
+        //   flex-direction: column;
+        height: auto;
+    }
 }
 
 .price__navigation {
     position: relative;
 }
 
-.price__navigation-arrow{
+.price__navigation-arrow {
     width: rem(30px);
     height: rem(30px);
-    
-    
 }
 
 .navigation-arrow__icon {
@@ -41,15 +36,13 @@
     height: rem(30px);
     fill: #fff;
     position: absolute;
-    top:50%; 
-
-        @include tablet {
-            // display: none;
-  }
-
+    top: 50%;
+    @include tablet {
+        // display: none;
+    }
 }
 
-.navigation-arrow__icon_left{
+.navigation-arrow__icon_left {
     transform: rotate(90deg);
     left: 70%;
 }
@@ -62,62 +55,68 @@
 .price__content {
     display: flex;
     flex-direction: row;
-
-      @include tablet {
-      flex-direction: column;
+    @include tablet {
+        flex-direction: column;
         align-items: center;
-  }
-
-
+    }
 }
 
-.price__content-picures {
+.price__content-pictures {
     position: relative;
     padding-top: rem(82px);
-
-        @include tablet {
+    @include tablet {
         padding-top: rem(0px);
-  }
+    }
+}
 
+.price__content-popup {
+    z-index:10;
+    position: absolute;
+    top: 2%;
+    left: 6%;
+
+ @include tablet {
+    top: -23%;
+    left: 5%;
+}
+
+ @include phone {
+    top: -30%;
+    left: -13%;
+}
 }
 
 .price__content-photo {
-     @include tablet {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       margin-bottom: 10px;
-   }
+    @include tablet {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: rem(10px);
+    }
 }
 
-.price__image-pic{
+.price__image-pic {
     max-width: 100%;
 }
 
 .price__content-hamburger {
-  border-radius: rem(5px);
-  background-color: rgb(227, 80, 40); 
-  opacity: 0.4;
-  width: rem(90px);
-  height: rem(90px); 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 1%;
-  left: 7%;
-
-  @include tablet {
-       top: -23%;
-       left: 6%;
-   } 
-
-     @include phone {
-       top: -32%;
-       left: -11%;
-   } 
-
+    border-radius: rem(5px);
+    background-color: rgb(227, 80, 40);
+    opacity: 0.4;
+    width: rem(90px);
+    height: rem(90px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    @include tablet {
+     
+    }
+    @include phone {
+        width: rem(70px);
+        height: rem(70px);
+    }
 }
 
 .content-hamburger__icon {
@@ -131,39 +130,37 @@
     color: #fff;
 }
 
-.price__content-kkal{
+.price__content-ingredients-link {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+
+.price__content-kkal {
     opacity: .5;
     width: rem(90px);
-    height: rem(90px); 
+    height: rem(90px);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    // position: relative;
-    position:absolute;
-    top: 96%;
-    left: 4%;
-    // justify-content: center;
-    
-   @include tablet {
-       top: -32%;
-       left: 80%;
-   } 
-
-        @include phone {
-           top: -40%;
-            left: 90%;
-   } 
-
-
+    align-items: center; 
+    position: absolute;
+    top: 98%;
+    left: 3%;
+    @include tablet {
+        top: -23%;
+        left: 83%;
+    }
+    @include phone {
+       top: -30%;
+       left: 84%;
+    }
 }
 
 .content-kkal__icon {
-     width: rem(139px);
+    width: rem(139px);
     height: rem(60px);
     fill: #fff;
-   
-   
-
 }
 
 .price__content-kkal {
@@ -171,101 +168,166 @@
 }
 
 .price__content-kkal-amount {
-    position:absolute;
-    top:27%;
+    position: absolute;
+    top: 27%;
     font-size: rem(20px);
-    
-
 }
+
 .price__content-photo {
     align-self: baseline;
-
-       @include tablet {
-       margin-bottom: rem(0px);
-
+    @include tablet {
+        margin-bottom: rem(0px);
+    }
 }
 
-}
 // .price__content-kkal-text {
 //     opacity: .7;
-
 // }
-
 .price__content-text {
     margin-left: rem(10px);
     width: 50%;
-
-          @include tablet {
-            margin-left: rem(0px);
-            text-align: center;
-            width: 90%;
-  }
-
-  @include phone{
-      width: 100%;
-  }
-
+    @include tablet {
+        margin-left: rem(0px);
+        text-align: center;
+        width: 90%;
+    }
+    @include phone {
+        width: 100%;
+    }
 }
 
-
 .price__content-title {
-    color:#fff;
+    color: #fff;
     font-weight: 300;
     line-height: 1;
     margin-bottom: rem(30px);
-
     @include tablet {
-       margin-bottom: rem(0px);
-
-}
-
-   @include phone {
-       font-size: rem(50px);
-   } 
-
+        margin-bottom: rem(0px);
+    }
+    @include phone {
+        font-size: rem(50px);
+    }
 }
 
 .price__content-description {
     line-height: 1.7;
     margin-bottom: rem(13px);
-
-        @include tablet {
-       margin-bottom: rem(0px);
-
-}
-
+    @include tablet {
+        margin-bottom: rem(0px);
+    }
 }
 
 .price__content-amount {
-    color:#e35028;
+    color: #e35028;
 }
 
 .price__content-value {
-
-        @include phone {
-    font-size: rem(50px);
-
+    @include phone {
+        font-size: rem(50px);
+    }
 }
 
-}
 .price__content-currency {
     font-size: rem(30px);
     margin-right: rem(20px);
-
-         @include tablet {
-       margin-right: rem(34px);
-
+    @include tablet {
+        margin-right: rem(34px);
+    }
+    @include phone {
+        margin-right: rem(28px);
+        font-size: rem(24px);
+    }
 }
 
-         @include phone {
-       margin-right: rem(28px);
-       font-size: rem(24px);
-
+.price__content-popup {
+    &:hover .price__content-ingredients-list {
+        display: block;
+    }
+    &:hover .price__content-hamburger {
+        background-color: #e35028;
+        opacity: 1;
+    }
+    @include tablet {
+        &:hover .ingredients-list__close {
+            display: block;
+        }
+    }
 }
 
+.price__content-ingredients-wrapper {
+    position: absolute;
+    top: 0%;
+    left: 100%;
+}
+.price__content-ingredients-list {
+    background-color: rgba(255, 255, 255, .9);
+    border-radius: rem(5px);
+    width: rem(270px);
+    padding: rem(14px) rem(0px);
+    display: none;
+    transition: .3s;
+    @include tablet {
+    
+    }
+    @include phone {
+        padding: rem(10px) rem(0px);
+        width: rem(230px);
+    }
+}
 
+.price__content-ingredients-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .price__content-button {
     padding: rem(10px) rem(15px);
+}
+
+.price__content-ingredients-product {
+    font-weight: 500;
+    color: #2f3234; // margin-right: 70px;
+}
+
+.price__content-ingredients-gram {
+    color: #2f3234;
+    font-weight: 400;
+}
+
+.ingredients-list__icon {
+    width: rem(45px);
+    height: rem(45px);
+}
+
+.ingredients-beef__icon {
+    fill: #e25028;
+}
+
+.ingredients-buns__icon {
+    fill: #f8b43a;
+}
+
+.ingredients-salad__icon {
+    fill: #8ac03e;
+}
+
+.ingredients-sauce__icon {
+    fill: #e25028;
+}
+
+.ingredients-cucumber__icon {
+    fill: #8ac03e;
+}
+
+.ingredients-cheese__icon {
+    fill: #f8b642;
+}
+
+.ingredients-list__close {
+    display: none;
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    z-index: 20;
 }
