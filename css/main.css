@@ -1000,7 +1000,6 @@ footer {
       width: 3.75rem; } }
 
 .contacts {
-  background-image: url(../img/bg/map.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1009,6 +1008,10 @@ footer {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+
+.contacts__map {
+  width: 100%;
+  height: 100%; }
 
 .footer {
   background-color: #111111;
@@ -1511,7 +1514,7 @@ footer {
     transform: rotate(-45deg); }
 
 .price {
-  background: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(0%, #f9b43b), color-stop(51%, #eb8d38), to(#f9b43b));
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9b43b), color-stop(51%, #eb8d38), to(#f9b43b));
   background: -webkit-linear-gradient(top, #f9b43b 0%, #eb8d38 51%, #f9b43b 100%);
   background: -o-linear-gradient(top, #f9b43b 0%, #eb8d38 51%, #f9b43b 100%);
   background: linear-gradient(top, #f9b43b 0%, #eb8d38 51%, #f9b43b 100%);
@@ -1605,12 +1608,25 @@ footer {
       -ms-flex-align: center;
       align-items: center; } }
 
-.price__content-picures {
+.price__content-pictures {
   position: relative;
   padding-top: 5.125rem; }
   @media screen and (max-width: 768px) {
-    .price__content-picures {
+    .price__content-pictures {
       padding-top: 0rem; } }
+
+.price__content-popup {
+  position: absolute;
+  top: 2%;
+  left: 6%; }
+  @media screen and (max-width: 768px) {
+    .price__content-popup {
+      top: -23%;
+      left: 5%; } }
+  @media screen and (max-width: 480px) {
+    .price__content-popup {
+      top: -50%;
+      left: -10%; } }
 
 @media screen and (max-width: 768px) {
   .price__content-photo {
@@ -1654,20 +1670,11 @@ footer {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  position: absolute;
-  top: 1%;
-  left: 7%;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s; }
-  @media screen and (max-width: 768px) {
-    .price__content-hamburger {
-      top: -23%;
-      left: 6%; } }
   @media screen and (max-width: 480px) {
     .price__content-hamburger {
-      top: -32%;
-      left: -15%;
       width: 4.375rem;
       height: 4.375rem; } }
 
@@ -1703,16 +1710,16 @@ footer {
   -ms-flex-align: center;
   align-items: center;
   position: absolute;
-  top: 96%;
-  left: 4%; }
+  top: 98%;
+  left: 3%; }
   @media screen and (max-width: 768px) {
     .price__content-kkal {
       top: -23%;
       left: 83%; } }
   @media screen and (max-width: 480px) {
     .price__content-kkal {
-      top: -32%;
-      left: 80%; } }
+      top: -50%;
+      left: 90%; } }
 
 .content-kkal__icon {
   width: 8.6875rem;
@@ -1795,28 +1802,22 @@ footer {
   .price__content-popup:hover .ingredients-list__close {
     display: block; } }
 
+.price__content-ingredients-wrapper {
+  position: absolute;
+  top: 0%;
+  left: 100%; }
+
 .price__content-ingredients-list {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 0.3125rem;
   width: 16.875rem;
   padding: 0.875rem 0rem;
-  position: absolute;
-  -webkit-transform: translateY(-78px) translateX(123px);
-  -ms-transform: translateY(-78px) translateX(123px);
-  transform: translateY(-78px) translateX(123px);
   display: none;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s; }
-  @media screen and (max-width: 768px) {
-    .price__content-ingredients-list {
-      -webkit-transform: translateY(-78px) translateX(115px);
-      -ms-transform: translateY(-78px) translateX(115px);
-      transform: translateY(-78px) translateX(115px); } }
   @media screen and (max-width: 480px) {
     .price__content-ingredients-list {
-      top: 3vh;
-      left: -24.5vw;
       padding: 0.625rem 0rem;
       width: 14.375rem; } }
 
@@ -1869,10 +1870,6 @@ footer {
 .ingredients-list__close {
   display: none;
   position: absolute;
-  top: -22%;
-  right: 28%;
+  top: 1%;
+  right: 2%;
   z-index: 10; }
-  @media screen and (max-width: 480px) {
-    .ingredients-list__close {
-      top: -3.7rem;
-      right: 3.4rem; } }
