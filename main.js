@@ -13,3 +13,97 @@ $(document).ready(function(){
 })
 
 })
+
+
+// *****Яндекс карта*****
+
+    ymaps.ready(init);
+    var myMap;
+
+    function init(){     
+        myMap = new ymaps.Map("map", {
+            center: [59.91817154482064,30.30557799999997],
+            zoom: 11,
+            controls: []
+        });
+     myMap.behaviors.disable('scrollZoom');
+
+        //  var myPlacemark = new ymaps.Placemark([59.91817154482064,30.30557799999997],
+        //     {}, {
+        // iconLayout: 'default#image',
+        // iconImageHref: 'img/icons/map-marker.svg',
+        // iconImageSize: [46, 57],
+        // iconImageOffset: [-26, -57]
+        //     });
+
+        // myMap.geoObjects.add(myPlacemark);
+
+
+
+        	
+var coords = [
+    [59.879269981030134,30.448023499999973], 
+    [59.96424153122341,30.35280250000002], 
+    [59.9295426647133,30.344236499999965],
+    [59.91817154482064,30.30557799999997]
+
+],
+    myCollection = new ymaps.GeoObjectCollection({}, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/icons/map-marker.svg',
+        iconImageSize: [46, 57],
+        iconImageOffset: [-60, -50],
+        draggable: false // и их можно перемещать
+    });
+
+for (var i = 0; i < coords.length; i++) {
+    myCollection.add(new ymaps.Placemark(coords[i]));
+}
+
+myMap.geoObjects.add(myCollection);
+
+    }
+
+
+
+$(function() {
+
+ $('.team__block-title').on('click' , function(e) {
+    e.preventDefault()
+    var elem = $(e.target),
+    item = elem.closest ('.team__block-item'),
+    content = item.find('.team__description'),
+    otherItems = item.siblings(),
+    other = item.siblings().find('.team__description');
+    contheight = item.find('.team__description-text').innerHeight();
+    console.log(contheight);
+    // reqHeight = item.find('.team__description-avatar').outerheight();
+                // .find('.team__description-text').outerheight();
+
+    if(!item.hasClass('active')){
+
+    otherItems.removeClass('active')    
+    item.addClass('active')
+
+    other.css({
+        "height" : 0
+    })
+
+    content.css({
+        "height" : "auto"
+
+    })
+    } else {
+        item.removeClass('active')
+           content.css({
+        "height" : 0
+    })
+    }
+
+})
+
+ });
+
+
+
+
