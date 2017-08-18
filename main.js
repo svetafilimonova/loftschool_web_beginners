@@ -64,7 +64,7 @@ myMap.geoObjects.add(myCollection);
 
     }
 
-
+// Аккордеон секции команда
 
 $(function() {
 
@@ -76,34 +76,66 @@ $(function() {
     otherItems = item.siblings(),
     other = item.siblings().find('.team__description');
     contheight = item.find('.team__description-text').innerHeight();
-    console.log(contheight);
-    // reqHeight = item.find('.team__description-avatar').outerheight();
-                // .find('.team__description-text').outerheight();
+    // console.log(contheight);
+
 
     if(!item.hasClass('active')){
 
-    otherItems.removeClass('active')    
+    otherItems.removeClass('active') 
+     other.slideUp(300);
+
     item.addClass('active')
 
-    other.css({
-        "height" : 0
-    })
-
-    content.css({
-        "height" : "auto"
-
-    })
+    content.slideDown(300);
+  
     } else {
         item.removeClass('active')
-           content.css({
-        "height" : 0
-    })
+           content.slideUp(300);
     }
-
-})
 
  });
 
 
+//  Аккордеон секции меню
 
+
+$(function() {
+
+ $('.menu__item-link').on('click' , function(e) {
+    e.preventDefault()
+    var elem = $(e.target),
+    item = elem.closest ('.menu__item'),
+    content = item.find('.menu__item-description'),
+    otherItems = item.siblings(),
+    other = item.siblings().find('.menu__item-description');
+    contentWidth = item.find('.menu__item-content').outerWidth();
+    
+
+    if(!item.hasClass('active')) {
+
+    otherItems.removeClass('active')    
+    item.addClass('active')
+
+     content.css({
+        "width" : "80vh"
+
+    })
+
+    other.css({
+        "width" : 0
+    })
+
+   
+    } else {
+        item.removeClass('active')
+           content.css({
+        "width" : 0
+    })
+    }
+
+
+    })
+});
+
+});
 

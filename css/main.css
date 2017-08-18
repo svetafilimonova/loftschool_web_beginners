@@ -935,6 +935,7 @@ footer {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  z-index: 10;
   cursor: pointer; }
   .menu__item.active .menu__item-description {
     width: 33.75rem;
@@ -976,7 +977,10 @@ footer {
   text-align: left;
   line-height: 2;
   overflow: hidden;
-  width: 0; }
+  width: 0;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
 
 .menu__item-link {
   color: #fff;
@@ -1520,7 +1524,7 @@ footer {
     transform: rotate(-45deg); }
 
 .price {
-  background: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(0%, #f9b43b), color-stop(51%, #eb8d38), to(#f9b43b));
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9b43b), color-stop(51%, #eb8d38), to(#f9b43b));
   background: -webkit-linear-gradient(top, #f9b43b 0%, #eb8d38 51%, #f9b43b 100%);
   background: -o-linear-gradient(top, #f9b43b 0%, #eb8d38 51%, #f9b43b 100%);
   background: linear-gradient(top, #f9b43b 0%, #eb8d38 51%, #f9b43b 100%);
