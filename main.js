@@ -74,24 +74,37 @@ $(function() {
     item = elem.closest ('.team__block-item'),
     content = item.find('.team__description'),
     otherItems = item.siblings(),
-    other = item.siblings().find('.team__description');
-    contheight = item.find('.team__description-text').innerHeight();
-    // console.log(contheight);
+    other = item.siblings().find('.team__description'),
+    contheight = item.find('.team__description-content').height();
+    
+    console.log(contheight);
 
 
-    if(!item.hasClass('active')){
+    // if(!item.hasClass('active')){
 
-    otherItems.removeClass('active') 
-     other.slideUp(300);
+    // otherItems.removeClass('active') 
+    //     //  other.css({
+    //     // "height" : 0
+    // // })
+    // //  other.slideUp(200);
+    // item.addClass('active')
+    // // content.slideDown(200);
 
-    item.addClass('active')
+    //  content.css({
+    //     "height" : contHeight
 
-    content.slideDown(300);
+    // })
+   
   
-    } else {
-        item.removeClass('active')
-           content.slideUp(300);
-    }
+    // } else {
+    //     item.removeClass('active')
+    //     //    content.slideUp(200);
+    //        content.css({
+    //     "height" : 0
+
+    // })
+
+    // }
 
  });
 
