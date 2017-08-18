@@ -64,7 +64,7 @@ myMap.geoObjects.add(myCollection);
 
     }
 
-
+// Аккордеон секции команда
 
 $(function() {
 
@@ -97,6 +97,48 @@ $(function() {
         item.removeClass('active')
            content.css({
         "height" : 0
+    })
+    }
+
+})
+
+ });
+
+
+//  Аккордеон секции меню
+
+
+$(function() {
+
+ $('.menu__item-link').on('click' , function(e) {
+    e.preventDefault()
+    var elem = $(e.target),
+    item = elem.closest ('.menu__item'),
+    content = item.find('.menu__item-description'),
+    otherItems = item.siblings(),
+    other = item.siblings().find('.menu__item-description');
+    contentWidth = item.find('.menu__item-content').outerWidth();
+    console.log(contentWidth);
+
+    if(!item.hasClass('active')){
+
+    otherItems.removeClass('active')    
+    item.addClass('active')
+
+     content.css({
+        "width" : "80vh"
+
+    })
+
+    other.css({
+        "width" : 0
+    })
+
+   
+    } else {
+        item.removeClass('active')
+           content.css({
+        "width" : 0
     })
     }
 
