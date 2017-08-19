@@ -93,7 +93,7 @@
 
     &.active {
         .team__description {
-            height: auto;
+            // height: auto;
             transition: .3s;
             
 
@@ -194,6 +194,18 @@
 .team__description {
      height:0;
      overflow: hidden;
-     transition: .3s;
+     transition: 1s;
     
+}
+
+
+.team__description-avatar {
+
+
+             @include tablet {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+     }
+
 }
