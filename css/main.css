@@ -818,7 +818,11 @@ footer {
   border-radius: 50%;
   overflow: hidden;
   margin-right: 1.3125rem;
-  position: relative; }
+  position: relative;
+  z-index: 10; }
+  @media screen and (max-width: 768px) {
+    .team__description-photo {
+      margin-right: 0; } }
   @media screen and (max-width: 480px) {
     .team__description-photo {
       margin-right: 0;
@@ -992,9 +996,9 @@ footer {
   line-height: 2;
   overflow: hidden;
   width: 0;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s; }
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
 
 .menu__item-link {
   color: #fff;

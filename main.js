@@ -75,14 +75,13 @@ $(document).ready(function(){
     content = item.find('.team__description'),
     otherItems = item.siblings(),
     other = otherItems.find('.team__description'),
-    contHeight = item.find('.team__description-content').outerHeight();
-    // contHeight = item.find('.team__description-avatar').outerHeight();
-    // contHeight += item.find('.team__description-text').height();
+    // contHeight = item.find('.team__description-content').outerHeight();
+    contHeight = item.find('.team__description-avatar').outerHeight();
+    contHeight += item.find('.team__description-text').outerHeight();
+    contHeight += item.find('.team__description-info').outerHeight();
 
   console.log(contHeight);
   
-
-
     if(!item.hasClass('active')){
 
     otherItems.removeClass('active');
@@ -125,8 +124,11 @@ $(function() {
     content = item.find('.menu__item-description'),
     otherItems = item.siblings(),
     other = item.siblings().find('.menu__item-description');
-    contentWidth = item.find('.menu__item-content').outerWidth();
-    
+    linkWidth = item.find('.menu__item-link').width();
+    linkAmount = $('.menu__list').find('.menu__item-link').length;
+    allLinkWidth = linkWidth * linkAmount;
+    contentWidth = $(window).width() - allLinkWidth;
+    console.log(contentWidth);
 
     if(!item.hasClass('active')) {
 
@@ -134,7 +136,7 @@ $(function() {
     item.addClass('active')
 
      content.css({
-        "width" : "90%"
+        "width" : contentWidth
 
     })
 
