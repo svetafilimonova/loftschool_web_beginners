@@ -158,3 +158,13 @@ $(function() {
 
 // });
 
+
+
+
+// Всплывашка в отзывах
+
+$(function() {
+
+$('.feedback__link-popup').fancybox();
+
+});

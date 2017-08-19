@@ -116,8 +116,7 @@
 
     @include phone {
          font-size:rem(13px);
-         margin-top:rem(20px)
-         
+         margin-top:rem(20px);
     }
 }
 
@@ -125,7 +124,13 @@
     opacity: 1;
 }
 
+.feedback__link-more {
 
+    @include phone {
+        display: none;
+   }
+
+}
 .feedback__btn-text {
 
      @include phone {
@@ -143,3 +148,48 @@
 
 }
 
+
+.feedback__popup {
+    // display: none;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    position: relative;
+    padding: 30px;
+    
+      
+    @include phone {
+        // display:block;
+    }
+}
+
+.feedback__popup-wrapper {
+    color: #2f3234;
+}
+
+.feedback__popup-name {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.feedback__popup__close {
+    text-decoration: none;
+    outline: none;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+.feedback__link-popup {
+    outline: none;
+    text-align: center;
+    display: none;  
+
+    @include phone {
+        display: inline-block;
+   }
+
+
+}
+.fancybox-close-small {
+    display: none;
+}
