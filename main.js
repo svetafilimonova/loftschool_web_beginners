@@ -168,3 +168,27 @@ $(function() {
 $('.feedback__link-popup').fancybox();
 
 });
+
+
+// Слайдер 
+
+$(document).ready(function(){
+
+   var slider = $('.bxslider').bxSlider({
+        pager: false
+
+    });
+
+    $('.price__navigation-next').on('click', function(e){
+        e.preventDefault();
+
+        slider.goToNextSlide();
+    });
+
+    $('.price__navigation-prev').on('click', function(e){
+        e.preventDefault();
+
+        slider.goToPrevSlide();
+    });
+
+  });
