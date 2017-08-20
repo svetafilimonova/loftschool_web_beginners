@@ -1659,7 +1659,10 @@ footer {
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
-  flex-direction: row; }
+  flex-direction: row;
+  position: relative;
+  width: 95%;
+  height: 95%; }
   @media screen and (max-width: 768px) {
     .price__content {
       -webkit-box-orient: vertical;
@@ -1938,3 +1941,16 @@ footer {
   top: 1%;
   right: 2%;
   z-index: 20; }
+
+.price__content-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.price__content-item {
+  width: 100vw;
+  height: 100%; }

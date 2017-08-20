@@ -55,6 +55,11 @@
 .price__content {
     display: flex;
     flex-direction: row;
+    position: relative;
+    // overflow: hidden;
+    width: 95%;
+    height: 95%;
+
     @include tablet {
         flex-direction: column;
         align-items: center;
@@ -331,3 +336,15 @@
     right: 2%;
     z-index: 20;
 }
+
+.price__content-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+ }
+
+ .price__content-item {
+    width: 100vw;
+    height: 100%; 
+ }
