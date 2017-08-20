@@ -674,6 +674,10 @@ footer {
   opacity: 1; }
 
 @media screen and (max-width: 480px) {
+  .feedback__link-more {
+    display: none; } }
+
+@media screen and (max-width: 480px) {
   .feedback__btn-text {
     display: none; } }
 
@@ -682,6 +686,38 @@ footer {
   @media screen and (max-width: 480px) {
     .feedback__btn-mob {
       display: inline-block; } }
+
+.feedback__popup {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  position: relative;
+  padding: 30px; }
+
+.feedback__popup-wrapper {
+  color: #2f3234; }
+
+.feedback__popup-name {
+  font-size: 14px;
+  margin-bottom: 20px; }
+
+.feedback__popup__close {
+  text-decoration: none;
+  outline: none;
+  position: absolute;
+  right: 5%;
+  top: 5%; }
+
+.feedback__link-popup {
+  outline: none;
+  text-align: center;
+  display: none; }
+  @media screen and (max-width: 480px) {
+    .feedback__link-popup {
+      display: inline-block; } }
+
+.fancybox-close-small {
+  display: none; }
 
 .team {
   background-image: url(../img/bg/team.jpg);
@@ -818,7 +854,11 @@ footer {
   border-radius: 50%;
   overflow: hidden;
   margin-right: 1.3125rem;
-  position: relative; }
+  position: relative;
+  z-index: 10; }
+  @media screen and (max-width: 768px) {
+    .team__description-photo {
+      margin-right: 0; } }
   @media screen and (max-width: 480px) {
     .team__description-photo {
       margin-right: 0;
@@ -992,9 +1032,9 @@ footer {
   line-height: 2;
   overflow: hidden;
   width: 0;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s; }
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
 
 .menu__item-link {
   color: #fff;
@@ -1619,7 +1659,10 @@ footer {
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
-  flex-direction: row; }
+  flex-direction: row;
+  position: relative;
+  width: 95%;
+  height: 95%; }
   @media screen and (max-width: 768px) {
     .price__content {
       -webkit-box-orient: vertical;
@@ -1898,3 +1941,16 @@ footer {
   top: 1%;
   right: 2%;
   z-index: 20; }
+
+.price__content-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.price__content-item {
+  width: 100vw;
+  height: 100%; }

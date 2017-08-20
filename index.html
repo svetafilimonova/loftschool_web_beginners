@@ -8,7 +8,9 @@
     <title>Mr Burger</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
     <script src="js/svg4everybody.js"></script>
     <script>
         svg4everybody();
@@ -114,7 +116,8 @@
                                 <div class="section__header about__description-title">100% свежее мясо</div>
                                 <div class="about__description-text">
                                     <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб
-                                        неравномерен</p>
+                                        неравномерен
+                                    </p>
                                 </div>
                             </div>
 
@@ -161,103 +164,305 @@
                     </div>
                 </div>
                 <div class="price__content">
-                    <div class="price__content-pictures">
-                        <div class="price__content-popup">
-                            <a href="#" class="price__content-ingredients-link">
-                                <div class="price__content-hamburger">
-                                    <svg class="content-hamburger__icon">
-                                        <use xlink:href="img/sprite/sprite.svg#burger"></use>
-                                    </svg>
-                                    <span class="price__content-ingredients section__text-title ">Состав</span>
+                    <ul class="price__content-list bxslider">
+                        <li class="price__content-item">
+                            <div class="price__content-pictures">
+                                <div class="price__content-popup">
+                                    <a href="#" class="price__content-ingredients-link">
+                                        <div class="price__content-hamburger">
+                                            <svg class="content-hamburger__icon">
+                                                <use xlink:href="img/sprite/sprite.svg#burger"></use>
+                                            </svg>
+                                            <span class="price__content-ingredients section__text-title ">Состав</span>
+                                        </div>
+                                    </a>
+                                    <div class="price__content-ingredients-wrapper">
+                                        <a href="#" class="ingredients-list__close">
+                                            <img src="img/icons/close.svg" alt="close">
+                                            </a>
+                                        <ul class="price__content-ingredients-list">
+                                            <li class="price__content-ingredients-item">
+                                                <div class="price__content-ingredients-icon">
+                                                    <svg class="ingredients-list__icon ingredients-beef__icon">
+                                                        <use xlink:href="img/sprite/sprite.svg#beef"></use>
+                                                    </svg>
+                                                </div>
+                                                <span class="price__content-ingredients-product section__text ">Говядина</span>
+                                                <span class="price__content-ingredients-gram section__text ">300г</span>
+                                            </li>
+                                            <li class="price__content-ingredients-item">
+                                                <div class="price__content-ingredients-icon">
+                                                    <svg class="ingredients-list__icon  ingredients-buns__icon">
+                                                        <use xlink:href="img/sprite/sprite.svg#buns"></use>
+                                                    </svg>
+                                                </div>
+                                                <span class="price__content-ingredients-product section__text ">Булочки</span>
+                                                <span class="price__content-ingredients-gram section__text ">100г</span>
+                                            </li>
+                                            <li class="price__content-ingredients-item">
+                                                <div class="price__content-ingredients-icon">
+                                                    <svg class=" ingredients-list__icon ingredients-salad__icon">
+                                                        <use xlink:href="img/sprite/sprite.svg#salad"></use>
+                                                    </svg>
+                                                </div>
+                                                <span class="price__content-ingredients-product section__text ">Зелень</span>
+                                                <span class="price__content-ingredients-gram section__text ">70г</span>
+                                            </li>
+                                            <li class="price__content-ingredients-item">
+                                                <div class="price__content-ingredients-icon">
+                                                    <svg class="ingredients-list__icon  ingredients-sauce__icon">
+                                                        <use xlink:href="img/sprite/sprite.svg#sauce"></use>
+                                                    </svg>
+                                                </div>
+                                                <span class="price__content-ingredients-product section__text ">Соус</span>
+                                                <span class="price__content-ingredients-gram section__text ">150г</span>
+                                            </li>
+                                            <li class="price__content-ingredients-item">
+                                                <div class="price__content-ingredients-icon">
+                                                    <svg class="ingredients-list__icon  ingredients-cucumber__icon">
+                                                        <use xlink:href="img/sprite/sprite.svg#cucumber"></use>
+                                                    </svg>
+                                                </div>
+                                                <span class="price__content-ingredients-product section__text ">Овощи</span>
+                                                <span class="price__content-ingredients-gram section__text ">200г</span>
+                                            </li>
+                                            <li class="price__content-ingredients-item">
+                                                <div class="price__content-ingredients-icon">
+                                                    <svg class="ingredients-list__icon ingredients-cheese__icon">
+                                                        <use xlink:href="img/sprite/sprite.svg#cheese"></use>
+                                                    </svg>
+                                                </div>
+                                                <span class="price__content-ingredients-product section__text ">Сыр</span>
+                                                <span class="price__content-ingredients-gram section__text ">80г</span>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </a>
-                            <div class="price__content-ingredients-wrapper">
-                                <a href="#" class="ingredients-list__close">
-                            <img src="img/icons/close.svg" alt="close">
-                            </a>
-                                <ul class="price__content-ingredients-list">
-                                    <li class="price__content-ingredients-item">
-                                        <div class="price__content-ingredients-icon">
-                                            <svg class="ingredients-list__icon ingredients-beef__icon">
-                                                <use xlink:href="img/sprite/sprite.svg#beef"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="price__content-ingredients-product section__text ">Говядина</span>
-                                        <span class="price__content-ingredients-gram section__text ">300г</span>
-                                    </li>
-                                    <li class="price__content-ingredients-item">
-                                        <div class="price__content-ingredients-icon">
-                                            <svg class="ingredients-list__icon  ingredients-buns__icon">
-                                                <use xlink:href="img/sprite/sprite.svg#buns"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="price__content-ingredients-product section__text ">Булочки</span>
-                                        <span class="price__content-ingredients-gram section__text ">100г</span>
-                                    </li>
-                                    <li class="price__content-ingredients-item">
-                                        <div class="price__content-ingredients-icon">
-                                            <svg class=" ingredients-list__icon ingredients-salad__icon">
-                                                <use xlink:href="img/sprite/sprite.svg#salad"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="price__content-ingredients-product section__text ">Зелень</span>
-                                        <span class="price__content-ingredients-gram section__text ">70г</span>
-                                    </li>
-                                    <li class="price__content-ingredients-item">
-                                        <div class="price__content-ingredients-icon">
-                                            <svg class="ingredients-list__icon  ingredients-sauce__icon">
-                                                <use xlink:href="img/sprite/sprite.svg#sauce"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="price__content-ingredients-product section__text ">Соус</span>
-                                        <span class="price__content-ingredients-gram section__text ">150г</span>
-                                    </li>
-                                    <li class="price__content-ingredients-item">
-                                        <div class="price__content-ingredients-icon">
-                                            <svg class="ingredients-list__icon  ingredients-cucumber__icon">
-                                                <use xlink:href="img/sprite/sprite.svg#cucumber"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="price__content-ingredients-product section__text ">Овощи</span>
-                                        <span class="price__content-ingredients-gram section__text ">200г</span>
-                                    </li>
-                                    <li class="price__content-ingredients-item">
-                                        <div class="price__content-ingredients-icon">
-                                            <svg class="ingredients-list__icon ingredients-cheese__icon">
-                                                <use xlink:href="img/sprite/sprite.svg#cheese"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="price__content-ingredients-product section__text ">Сыр</span>
-                                        <span class="price__content-ingredients-gram section__text ">80г</span>
-                                    </li>
-                                </ul>
+                                <div class="price__content-kkal">
+                                    <svg class="content-kkal__icon">
+                                        <use xlink:href="img/sprite/sprite.svg#kkal"></use>
+                                    </svg>
+                                    <span class="price__content-kkal-amount section__text-title">1200</span>
+                                    <span class="price__content-kkal-text section__text-title">KKАЛ</span>
+                                </div>
+                                <div class="price__content-photo">
+                                    <img src="./img/bg/burger.png" alt="" class="price__image-pic">
+                                </div>
                             </div>
-                        </div>
-                        <div class="price__content-kkal">
-                            <svg class="content-kkal__icon">
-                                <use xlink:href="img/sprite/sprite.svg#kkal"></use>
-                            </svg>
-                            <span class="price__content-kkal-amount section__text-title">1200</span>
-                            <span class="price__content-kkal-text section__text-title">KKАЛ</span>
-                        </div>
-                        <div class="price__content-photo">
-                            <img src="./img/bg/burger.png" alt="" class="price__image-pic">
-                        </div>
-                    </div>
-                    <div class="price__content-text">
-                        <div class="price__content-title section__title ">Dark Beef Burger</div>
-                        <div class="price__content-description section__text">
-                            <p>
-                                Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами,
-                                луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
-                            </p>
-                        </div>
-                        <div class="price__content-amount">
-                            <span class="price__content-value section__title">500</span>
-                            <span class="price__content-currency section__text-title ">рублей</span>
-                            <a href="#" class="button price__content-button">Заказать</a>
-                        </div>
-                    </div>
+                            <div class="price__content-text">
+                                <div class="price__content-title section__title ">Dark Beef Burger</div>
+                                <div class="price__content-description section__text">
+                                    <p>
+                                        Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами,
+                                        луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                                    </p>
+                                </div>
+                                <div class="price__content-amount">
+                                    <span class="price__content-value section__title">500</span>
+                                    <span class="price__content-currency section__text-title ">рублей</span>
+                                    <a href="#" class="button price__content-button">Заказать</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="price__content-item">
+                            <div class="price__content-pictures">
+                                <div class="price__content-popup">
+                                    <a href="#" class="price__content-ingredients-link">
+                                        <div class="price__content-hamburger">
+                                            <svg class="content-hamburger__icon">
+                                                <use xlink:href="img/sprite/sprite.svg#burger"></use>
+                                            </svg>
+                                            <span class="price__content-ingredients section__text-title ">Состав</span>
+                                        </div>
+                                    </a>
+                                    <div class="price__content-ingredients-wrapper">
+                                        <a href="#" class="ingredients-list__close">
+                                            <img src="img/icons/close.svg" alt="close">
+                                            </a>
+                                        <ul class="price__content-ingredients-list">
+                                            <li class="price__content-ingredients-item">
+                                                <div class="price__content-ingredients-icon">
+                                                    <svg class="ingredients-list__icon ingredients-beef__icon">
+                                                        <use xlink:href="img/sprite/sprite.svg#beef"></use>
+                                                    </svg>
+                                                </div>
+                                                <span class="price__content-ingredients-product section__text ">Говядина</span>
+                                                <span class="price__content-ingredients-gram section__text ">300г</span>
+                                            </li>
+                                            <li class="price__content-ingredients-item">
+                                                <div class="price__content-ingredients-icon">
+                                                    <svg class="ingredients-list__icon  ingredients-buns__icon">
+                                                        <use xlink:href="img/sprite/sprite.svg#buns"></use>
+                                                    </svg>
+                                                </div>
+                                                <span class="price__content-ingredients-product section__text ">Булочки</span>
+                                                <span class="price__content-ingredients-gram section__text ">100г</span>
+                                            </li>
+                                            <li class="price__content-ingredients-item">
+                                                <div class="price__content-ingredients-icon">
+                                                    <svg class=" ingredients-list__icon ingredients-salad__icon">
+                                                        <use xlink:href="img/sprite/sprite.svg#salad"></use>
+                                                    </svg>
+                                                </div>
+                                                <span class="price__content-ingredients-product section__text ">Зелень</span>
+                                                <span class="price__content-ingredients-gram section__text ">70г</span>
+                                            </li>
+                                            <li class="price__content-ingredients-item">
+                                                <div class="price__content-ingredients-icon">
+                                                    <svg class="ingredients-list__icon  ingredients-sauce__icon">
+                                                        <use xlink:href="img/sprite/sprite.svg#sauce"></use>
+                                                    </svg>
+                                                </div>
+                                                <span class="price__content-ingredients-product section__text ">Соус</span>
+                                                <span class="price__content-ingredients-gram section__text ">150г</span>
+                                            </li>
+                                            <li class="price__content-ingredients-item">
+                                                <div class="price__content-ingredients-icon">
+                                                    <svg class="ingredients-list__icon  ingredients-cucumber__icon">
+                                                        <use xlink:href="img/sprite/sprite.svg#cucumber"></use>
+                                                    </svg>
+                                                </div>
+                                                <span class="price__content-ingredients-product section__text ">Овощи</span>
+                                                <span class="price__content-ingredients-gram section__text ">200г</span>
+                                            </li>
+                                            <li class="price__content-ingredients-item">
+                                                <div class="price__content-ingredients-icon">
+                                                    <svg class="ingredients-list__icon ingredients-cheese__icon">
+                                                        <use xlink:href="img/sprite/sprite.svg#cheese"></use>
+                                                    </svg>
+                                                </div>
+                                                <span class="price__content-ingredients-product section__text ">Сыр</span>
+                                                <span class="price__content-ingredients-gram section__text ">80г</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="price__content-kkal">
+                                    <svg class="content-kkal__icon">
+                                        <use xlink:href="img/sprite/sprite.svg#kkal"></use>
+                                    </svg>
+                                    <span class="price__content-kkal-amount section__text-title">1200</span>
+                                    <span class="price__content-kkal-text section__text-title">KKАЛ</span>
+                                </div>
+                                <div class="price__content-photo">
+                                    <img src="./img/bg/burger.png" alt="" class="price__image-pic">
+                                </div>
+                            </div>
+                            <div class="price__content-text">
+                                <div class="price__content-title section__title ">Dark Beef Burger</div>
+                                <div class="price__content-description section__text">
+                                    <p>
+                                        Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами,
+                                        луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                                    </p>
+                                </div>
+                                <div class="price__content-amount">
+                                    <span class="price__content-value section__title">500</span>
+                                    <span class="price__content-currency section__text-title ">рублей</span>
+                                    <a href="#" class="button price__content-button">Заказать</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="price__content-item">
+                            <div class="price__content-pictures">
+                                <div class="price__content-popup">
+                                    <a href="#" class="price__content-ingredients-link">
+                                        <div class="price__content-hamburger">
+                                            <svg class="content-hamburger__icon">
+                                                <use xlink:href="img/sprite/sprite.svg#burger"></use>
+                                            </svg>
+                                            <span class="price__content-ingredients section__text-title ">Состав</span>
+                                        </div>
+                                    </a>
+                                    <div class="price__content-ingredients-wrapper">
+                                        <a href="#" class="ingredients-list__close">
+                                            <img src="img/icons/close.svg" alt="close">
+                                            </a>
+                                        <ul class="price__content-ingredients-list">
+                                            <li class="price__content-ingredients-item">
+                                                <div class="price__content-ingredients-icon">
+                                                    <svg class="ingredients-list__icon ingredients-beef__icon">
+                                                        <use xlink:href="img/sprite/sprite.svg#beef"></use>
+                                                    </svg>
+                                                </div>
+                                                <span class="price__content-ingredients-product section__text ">Говядина</span>
+                                                <span class="price__content-ingredients-gram section__text ">300г</span>
+                                            </li>
+                                            <li class="price__content-ingredients-item">
+                                                <div class="price__content-ingredients-icon">
+                                                    <svg class="ingredients-list__icon  ingredients-buns__icon">
+                                                        <use xlink:href="img/sprite/sprite.svg#buns"></use>
+                                                    </svg>
+                                                </div>
+                                                <span class="price__content-ingredients-product section__text ">Булочки</span>
+                                                <span class="price__content-ingredients-gram section__text ">100г</span>
+                                            </li>
+                                            <li class="price__content-ingredients-item">
+                                                <div class="price__content-ingredients-icon">
+                                                    <svg class=" ingredients-list__icon ingredients-salad__icon">
+                                                        <use xlink:href="img/sprite/sprite.svg#salad"></use>
+                                                    </svg>
+                                                </div>
+                                                <span class="price__content-ingredients-product section__text ">Зелень</span>
+                                                <span class="price__content-ingredients-gram section__text ">70г</span>
+                                            </li>
+                                            <li class="price__content-ingredients-item">
+                                                <div class="price__content-ingredients-icon">
+                                                    <svg class="ingredients-list__icon  ingredients-sauce__icon">
+                                                        <use xlink:href="img/sprite/sprite.svg#sauce"></use>
+                                                    </svg>
+                                                </div>
+                                                <span class="price__content-ingredients-product section__text ">Соус</span>
+                                                <span class="price__content-ingredients-gram section__text ">150г</span>
+                                            </li>
+                                            <li class="price__content-ingredients-item">
+                                                <div class="price__content-ingredients-icon">
+                                                    <svg class="ingredients-list__icon  ingredients-cucumber__icon">
+                                                        <use xlink:href="img/sprite/sprite.svg#cucumber"></use>
+                                                    </svg>
+                                                </div>
+                                                <span class="price__content-ingredients-product section__text ">Овощи</span>
+                                                <span class="price__content-ingredients-gram section__text ">200г</span>
+                                            </li>
+                                            <li class="price__content-ingredients-item">
+                                                <div class="price__content-ingredients-icon">
+                                                    <svg class="ingredients-list__icon ingredients-cheese__icon">
+                                                        <use xlink:href="img/sprite/sprite.svg#cheese"></use>
+                                                    </svg>
+                                                </div>
+                                                <span class="price__content-ingredients-product section__text ">Сыр</span>
+                                                <span class="price__content-ingredients-gram section__text ">80г</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="price__content-kkal">
+                                    <svg class="content-kkal__icon">
+                                        <use xlink:href="img/sprite/sprite.svg#kkal"></use>
+                                    </svg>
+                                    <span class="price__content-kkal-amount section__text-title">1200</span>
+                                    <span class="price__content-kkal-text section__text-title">KKАЛ</span>
+                                </div>
+                                <div class="price__content-photo">
+                                    <img src="./img/bg/burger.png" alt="" class="price__image-pic">
+                                </div>
+                            </div>
+                            <div class="price__content-text">
+                                <div class="price__content-title section__title ">Dark Beef Burger</div>
+                                <div class="price__content-description section__text">
+                                    <p>
+                                        Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами,
+                                        луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                                    </p>
+                                </div>
+                                <div class="price__content-amount">
+                                    <span class="price__content-value section__title">500</span>
+                                    <span class="price__content-currency section__text-title ">рублей</span>
+                                    <a href="#" class="button price__content-button">Заказать</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
                 <div class="price__navigation">
                     <div class="price__navigation-arrow">
@@ -382,8 +587,8 @@
                         </li>
                         <li class="menu__item">
                             <a href="" class="section__text-title menu__item-link menu__item-link_vegan" style="background-image: url(img/bg/vegan.jpg);">
-                            <span class="menu__item-text">Вегетерианское</span>
-                        </a>
+                                <span class="menu__item-text">Вегетерианское</span>
+                            </a>
                             <div class="section__text menu__item-description">
                                 <div class="menu__item-content">
                                     <p>
@@ -434,14 +639,31 @@
                                         расплавленным.
                                     </p>
                                 </div>
-                                <div class="feedback__button"> <a href="#" class="feedback__link"> 
-                                    <span class="feedback__btn-text">Подробнее</span>
-                                    <span class="feedback__btn-text feedback__btn-mob">Читать отзыв </span>
-                                </a>
+                                <div class="feedback__button">
+                                    <a href="#" class="feedback__link feedback__link-more"> 
+                                    <span class="feedback__btn-text">Подробнее</span></a>
+                                    <a href="#" class="feedback__link feedback__link-popup" data-src="#one">
+                                     <span class="feedback__btn-text feedback__btn-mob">Читать отзыв </span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-
+                        <div class="feedback__popup" id="one">
+                            <a href="#" class="feedback__popup__close" data-fancybox-close>
+                                    <img src="img/icons/close.svg" alt="close">
+                            </a>
+                            <div class="section__text feedback__popup-wrapper">
+                                <div class="section__text-title feedback__popup-name">Константин Спилберг</div>
+                                <div class="feedback__comment-popup">
+                                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда
+                                        не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
+                                        расплавленным.Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно
+                                        забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой
+                                        сочной, а сыр таким расплавленным.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li class="feedback__item">
                         <div class="feedback__photo feedback__photo-two" style="background-image: url(img/bg/man2.jpg);"></div>
@@ -455,10 +677,27 @@
                                     </p>
                                 </div>
                                 <div class="feedback__button">
-                                    <a href="#" class="feedback__link">
-                                        <span class="feedback__btn-text">Подробнее</span>
-                                        <span class="feedback__btn-text feedback__btn-mob">Читать отзыв </span>
-                                    </a>
+                                    <a href="#" class="feedback__link feedback__link-more"> 
+                                        <span class="feedback__btn-text">Подробнее</span></a>
+                                    <a href="#" class="feedback__link feedback__link-popup" data-src="#two">
+                                         <span class="feedback__btn-text feedback__btn-mob">Читать отзыв </span>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback__popup" id="two">
+                            <a href="#" class="feedback__popup__close" data-fancybox-close>
+                                        <img src="img/icons/close.svg" alt="close">
+                                </a>
+                            <div class="section__text feedback__popup-wrapper">
+                                <div class="section__text-title feedback__popup-name">Константин Спилберг</div>
+                                <div class="feedback__comment-popup">
+                                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда
+                                        не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
+                                        расплавленным.Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно
+                                        забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой
+                                        сочной, а сыр таким расплавленным.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -475,12 +714,30 @@
                                     </p>
                                 </div>
                                 <div class="feedback__button">
-                                    <a href="#" class="feedback__link">
-                                        <span class="feedback__btn-text">Подробнее</span>
-                                        <span class="feedback__btn-text feedback__btn-mob">Читать отзыв </span>
-                                    </a>
+                                    <a href="#" class="feedback__link feedback__link-more"> 
+                                        <span class="feedback__btn-text">Подробнее</span></a>
+                                    <a href="#" class="feedback__link feedback__link-popup" data-src="#three">
+                                         <span class="feedback__btn-text feedback__btn-mob">Читать отзыв </span>
+                                        </a>
                                 </div>
                             </div>
+                        </div>
+                        <div class="feedback__popup" id="three">
+                            <a href="#" class="feedback__popup__close" data-fancybox-close>
+                                        <img src="img/icons/close.svg" alt="close">
+                                </a>
+                            <div class="section__text feedback__popup-wrapper">
+                                <div class="section__text-title feedback__popup-name">Константин Спилберг</div>
+                                <div class="feedback__comment-popup">
+                                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда
+                                        не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
+                                        расплавленным.Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно
+                                        забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой
+                                        сочной, а сыр таким расплавленным.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li class="feedback__item">
                         <div class="feedback__photo feedback__photo-four" style="background-image: url(img/bg/back.jpg);"></div>
@@ -494,12 +751,30 @@
                                     </p>
                                 </div>
                                 <div class="feedback__button">
-                                    <a href="#" class="feedback__link">
-                                        <span class="feedback__btn-text">Подробнее</span>
-                                        <span class="feedback__btn-text feedback__btn-mob">Читать отзыв </span>
-                                    </a>
+                                    <a href="#" class="feedback__link feedback__link-more"> 
+                                        <span class="feedback__btn-text">Подробнее</span></a>
+                                    <a href="#" class="feedback__link feedback__link-popup" data-src="#four">
+                                         <span class="feedback__btn-text feedback__btn-mob">Читать отзыв </span>
+                                        </a>
                                 </div>
                             </div>
+                        </div>
+                        <div class="feedback__popup" id="four">
+                            <a href="#" class="feedback__popup__close" data-fancybox-close>
+                                        <img src="img/icons/close.svg" alt="close">
+                                </a>
+                            <div class="section__text feedback__popup-wrapper">
+                                <div class="section__text-title feedback__popup-name">Константин Спилберг</div>
+                                <div class="feedback__comment-popup">
+                                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда
+                                        не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
+                                        расплавленным.Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно
+                                        забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой
+                                        сочной, а сыр таким расплавленным.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li class="feedback__item">
                         <div class="feedback__photo feedback__photo-five" style="background-image: url(img/bg/leather.jpg);"></div>
@@ -513,13 +788,30 @@
                                     </p>
                                 </div>
                                 <div class="feedback__button">
-                                    <a href="#" class="feedback__link">
-                                        <span class="feedback__btn-text">Подробнее</span>
-                                        <span class="feedback__btn-text feedback__btn-mob">Читать отзыв </span>
-                                    </a>
+                                    <a href="#" class="feedback__link feedback__link-more"> 
+                                        <span class="feedback__btn-text">Подробнее</span></a>
+                                    <a href="#" class="feedback__link feedback__link-popup" data-src="#five">
+                                         <span class="feedback__btn-text feedback__btn-mob">Читать отзыв </span>
+                                        </a>
                                 </div>
                             </div>
-
+                        </div>
+                        <div class="feedback__popup" id="five">
+                            <a href="#" class="feedback__popup__close" data-fancybox-close>
+                                        <img src="img/icons/close.svg" alt="close">
+                                </a>
+                            <div class="section__text feedback__popup-wrapper">
+                                <div class="section__text-title feedback__popup-name">Константин Спилберг</div>
+                                <div class="feedback__comment-popup">
+                                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда
+                                        не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
+                                        расплавленным.Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно
+                                        забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой
+                                        сочной, а сыр таким расплавленным.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li class="feedback__item">
                         <div class="feedback__photo feedback__photo-six" style="background-image: url(img/bg/spec.jpg);"></div>
@@ -533,12 +825,30 @@
                                     </p>
                                 </div>
                                 <div class="feedback__button">
-                                    <a href="#" class="feedback__link">
-                                        <span class="feedback__btn-text">Подробнее</span>
-                                        <span class="feedback__btn-text feedback__btn-mob">Читать отзыв </span>
-                                    </a>
+                                    <a href="#" class="feedback__link feedback__link-more"> 
+                                        <span class="feedback__btn-text">Подробнее</span></a>
+                                    <a href="#" class="feedback__link feedback__link-popup" data-src="#six">
+                                         <span class="feedback__btn-text feedback__btn-mob">Читать отзыв </span>
+                                        </a>
                                 </div>
                             </div>
+                        </div>
+                        <div class="feedback__popup" id="six">
+                            <a href="#" class="feedback__popup__close" data-fancybox-close>
+                                        <img src="img/icons/close.svg" alt="close">
+                                </a>
+                            <div class="section__text feedback__popup-wrapper">
+                                <div class="section__text-title feedback__popup-name">Константин Спилберг</div>
+                                <div class="feedback__comment-popup">
+                                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда
+                                        не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
+                                        расплавленным.Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно
+                                        забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой
+                                        сочной, а сыр таким расплавленным.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li class="feedback__item">
                         <div class="feedback__photo feedback__photo-seven" style="background-image: url(img/bg/old.jpg);"></div>
@@ -552,10 +862,27 @@
                                     </p>
                                 </div>
                                 <div class="feedback__button">
-                                    <a href="#" class="feedback__link">
-                                        <span class="feedback__btn-text">Подробнее</span>
-                                        <span class="feedback__btn-text feedback__btn-mob">Читать отзыв </span>
-                                    </a>
+                                    <a href="#" class="feedback__link feedback__link-more"> 
+                                        <span class="feedback__btn-text">Подробнее</span></a>
+                                    <a href="#" class="feedback__link feedback__link-popup" data-src="#seven">
+                                         <span class="feedback__btn-text feedback__btn-mob">Читать отзыв </span>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback__popup" id="seven">
+                            <a href="#" class="feedback__popup__close" data-fancybox-close>
+                                        <img src="img/icons/close.svg" alt="close">
+                                </a>
+                            <div class="section__text feedback__popup-wrapper">
+                                <div class="section__text-title feedback__popup-name">Константин Спилберг</div>
+                                <div class="feedback__comment-popup">
+                                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда
+                                        не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
+                                        расплавленным.Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно
+                                        забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой
+                                        сочной, а сыр таким расплавленным.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -572,16 +899,34 @@
                                     </p>
                                 </div>
                                 <div class="feedback__button">
-                                    <a href="#" class="feedback__link">
-                                        <span class="feedback__btn-text">Подробнее</span>
-                                        <span class="feedback__btn-text feedback__btn-mob">Читать отзыв </span>
-                                    </a>
+                                    <a href="#" class="feedback__link feedback__link-more"> 
+                                        <span class="feedback__btn-text">Подробнее</span></a>
+                                    <a href="#" class="feedback__link feedback__link-popup" data-src="#eight">
+                                         <span class="feedback__btn-text feedback__btn-mob">Читать отзыв </span>
+                                        </a>
                                 </div>
                             </div>
+                        </div>
+                        <div class="feedback__popup" id="eight">
+                            <a href="#" class="feedback__popup__close" data-fancybox-close>
+                                        <img src="img/icons/close.svg" alt="close">
+                                </a>
+                            <div class="section__text feedback__popup-wrapper">
+                                <div class="section__text-title feedback__popup-name">Константин Спилберг</div>
+                                <div class="feedback__comment-popup">
+                                    <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда
+                                        не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
+                                        расплавленным.Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно
+                                        забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой
+                                        сочной, а сыр таким расплавленным.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                 </ul>
-                </div>
-                </div>
+            </div>
+            </div>
         </section>
         <section class="section order">
             <div class="section__wrapper order__wrapper">
@@ -762,6 +1107,8 @@
     </nav>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
     <script src="main.js"></script>
 </body>
 

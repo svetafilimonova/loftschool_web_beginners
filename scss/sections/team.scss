@@ -120,7 +120,13 @@
     overflow: hidden;
     margin-right: rem(21px);
     position: relative;
+    z-index: 10;
 
+
+    @include tablet {
+        margin-right:0;
+    }
+    
         @include phone {
         margin-right:0;
         margin-bottom: rem(20px);
@@ -194,7 +200,7 @@
 .team__description {
      height:0;
      overflow: hidden;
-     transition: 1s;
+     transition: .3s;
     
 }
 
