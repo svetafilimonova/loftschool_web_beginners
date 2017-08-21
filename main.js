@@ -168,3 +168,130 @@ $(function() {
 $('.feedback__link-popup').fancybox();
 
 });
+
+
+// Слайдер 
+
+$(document).ready(function(){
+
+   var slider = $('.bxslider').bxSlider({
+        pager: false
+
+    });
+
+    $('.price__navigation-next').on('click', function(e){
+        e.preventDefault();
+
+        slider.goToNextSlide();
+    });
+
+    $('.price__navigation-prev').on('click', function(e){
+        e.preventDefault();
+
+        slider.goToPrevSlide();
+    });
+
+  });
+
+
+//   One-page scroll
+
+$(function(){
+
+    var sections = $('.section'),
+    container = $('.maincontent'),
+    isScroll = false;
+
+    var performScroll = function (sectionEq) {
+
+        if(!isScroll){
+            isScroll = true;
+            var position = (sectionEq * -100) + '%';
+            container.css({
+                'transform':'translateY(' + position + ')',
+                '-webkit-transform':'translateY((' + position + ')'
+            })
+    
+            sections.eq(sectionEq).addClass('active')
+            .siblings().removeClass('active');
+
+
+            setTimeout(function(){
+                isScroll = false; 
+                $('.navigation__list-item').eq(sectionEq).addClass('active')
+                .siblings().removeClass('active');
+
+            }, 500);
+        }
+
+    }    
+
+        var findSection = function(sections) {
+
+            var activeSections = sections.filter('.active');
+            return {
+                activeSections : activeSections,
+                nextSection    : activeSections.next(),
+                prevSection    : activeSections.prev()
+            }
+        }
+
+    
+
+    $('.wrapper').on('wheel', function(e){
+
+        var scroll = e.originalEvent.deltaY;
+        var section = findSection(sections);
+
+        if(scroll > 0 && section.nextSection.length){ //сколлим вниз 
+            console.log("вниз");
+
+            performScroll(section.nextSection.index());
+        }
+
+        if(scroll < 0 && section.prevSection.length){  //сколлим вверх
+            console.log("вверх");
+
+            performScroll(section.prevSection.index());
+
+        }
+    });
+
+    $(document).on('keydown', function (e) {
+
+        console.log("jj");
+
+        var section = findSection(sections);
+
+        switch (e.keyCode) {
+            case 40: //стрелка вниз
+                if(section.nextSection.length) {
+                performScroll(section.nextSection.index());
+            }
+             break;
+            case 38: // стелка вверх
+            if(section.prevSection.length) {
+                performScroll(section.prevSection.index());
+            }
+            break;  
+        }
+
+    });
+
+    $('[data-go-to]').on('click', function(e){
+        e.preventDefault();
+
+        var elem = $(e.target);
+
+        performScroll(elem.attr('data-go-to'));
+
+    });
+
+    $(window).swipe({
+        //Generic swipe handler for all directions
+        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+        //   alert("You swiped " + direction );  
+        }
+      });
+
+});

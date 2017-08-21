@@ -46,4 +46,11 @@
 }
 }
 
+.navigation__list-item {
+
+    &.active .navigation__list-link:after {
+        display: block;
+    }
+
+}
 
