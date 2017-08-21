@@ -202,6 +202,9 @@ $(function(){
     container = $('.maincontent'),
     isScroll = false;
 
+    var md = new MobileDetect(window.navigator.userAgent),
+    isMobile = md.mobile();
+
     var performScroll = function (sectionEq) {
 
         if(!isScroll){
@@ -237,7 +240,7 @@ $(function(){
         }
 
     
-
+        if(!isMobile) {
     $('.wrapper').on('wheel', function(e){
 
         var scroll = e.originalEvent.deltaY;
@@ -257,9 +260,10 @@ $(function(){
         }
     });
 
+}
+
     $(document).on('keydown', function (e) {
 
-        console.log("jj");
 
         var section = findSection(sections);
 
@@ -287,11 +291,11 @@ $(function(){
 
     });
 
-    $(window).swipe({
-        //Generic swipe handler for all directions
-        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-        //   alert("You swiped " + direction );  
-        }
-      });
+    // $(window).swipe({
+    //     //Generic swipe handler for all directions
+    //     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+    //     //   alert("You swiped " + direction );  
+    //     }
+    //   });
 
 });
