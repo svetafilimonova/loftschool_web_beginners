@@ -204,6 +204,8 @@ $(function(){
 
     var md = new MobileDetect(window.navigator.userAgent),
     isMobile = md.mobile();
+    var screenWidth = $(window).width();
+    // console.log(screenWidth);
 
     var performScroll = function (sectionEq) {
 
@@ -240,7 +242,7 @@ $(function(){
         }
 
     
-        if(!isMobile) {
+        if(!isMobile || screenWidth >=768) {
     $('.wrapper').on('wheel', function(e){
 
         var scroll = e.originalEvent.deltaY;

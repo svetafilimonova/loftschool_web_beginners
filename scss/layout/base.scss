@@ -59,7 +59,7 @@ footer {
     position:relative;
     overflow: hidden;
 
-    @include phone {
+    @include tablet {
         overflow: visible;
     }
 }
