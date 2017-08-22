@@ -301,3 +301,54 @@ $(function(){
     //   });
 
 });
+
+
+// Отправка формы
+
+
+
+
+var submitForm = function (e) {
+    e.preventDefault();
+
+    console.log('I am from submit');
+
+    var form = $(e.target);
+
+    var request = ajaxForm(form);
+
+
+    request.done(function(msg){
+        alert(msg);
+        var mes = msg.mes,
+            status = msg.status;
+        if (status === 'OK') {
+            form.append('<p>' + mes + '</p>');
+        } else{
+            form.append('<p>' + mes + '</p>');
+        }
+
+    });
+
+    request.fail(function(jqXHR, textStatus){
+        alert("error" + textStatus);
+
+    });
+}
+
+var ajaxForm = function (form) {
+
+    var  url = form.attr('action'),
+         data = form.serialize();
+
+    return $.ajax({
+        type:'POST',
+        url : url,
+        data: data,
+        dataType : 'JSON'
+
+    });
+
+}
+
+$('#order-form').on('submit', submitForm);
