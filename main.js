@@ -318,19 +318,19 @@ var submitForm = function (e) {
     var request = ajaxForm(form);
 
 
-    request.done(function(msg){
-        alert(msg);
+    request.done(function(msg) {
+        // alert(msg);
         var mes = msg.mes,
             status = msg.status;
         if (status === 'OK') {
-            form.append('<p>' + mes + '</p>');
+            form.append('<p style="color:white;">' + mes + '</p>');
         } else{
-            form.append('<p>' + mes + '</p>');
+            form.append('<p style="color:white;">' + mes + '</p>');
         }
 
     });
 
-    request.fail(function(jqXHR, textStatus){
+    request.fail(function(jqXHR, textStatus) {
         alert("error" + textStatus);
 
     });
