@@ -16,19 +16,30 @@
     align-items: center;
     justify-content: center;
     height: 75%;
+    position: relative;
     @include tablet {
         //   flex-direction: column;
         height: auto;
     }
 }
 
-.price__navigation {
-    position: relative;
-}
 
 .price__navigation-arrow {
     width: rem(30px);
     height: rem(30px);
+    position: absolute;
+  
+}
+
+.price__navigation-next {
+    top: 50%;
+    right:-5%;
+
+}
+
+.price__navigation-prev {
+    top: 50%;
+    left:-5%; 
 }
 
 .navigation-arrow__icon {
@@ -36,7 +47,7 @@
     height: rem(30px);
     fill: #fff;
     position: absolute;
-    top: 50%;
+    // top: 50%;
     @include tablet {
         // display: none;
     }
@@ -44,12 +55,12 @@
 
 .navigation-arrow__icon_left {
     transform: rotate(90deg);
-    left: 70%;
+    // left: 70%;
 }
 
 .navigation-arrow__icon_right {
     transform: rotate(-90deg);
-    left: 55%;
+    // left: 55%;
 }
 
 .price__content {

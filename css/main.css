@@ -180,8 +180,8 @@ footer {
     width: 16px;
     height: 16px;
     position: absolute;
-    top: 13%;
-    left: -103%;
+    top: 3px;
+    left: -6px;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s; }
@@ -863,6 +863,13 @@ footer {
       -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
       transform: rotate(180deg); }
+
+.team__description-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 65%; }
 
 .team__description-photo {
   width: 6.25rem;
@@ -1594,7 +1601,7 @@ footer {
     transform: rotate(-45deg); }
 
 .price {
-  background: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(0%, #f9b43b), color-stop(51%, #eb8d38), to(#f9b43b));
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9b43b), color-stop(51%, #eb8d38), to(#f9b43b));
   background: -webkit-linear-gradient(top, #f9b43b 0%, #eb8d38 51%, #f9b43b 100%);
   background: -o-linear-gradient(top, #f9b43b 0%, #eb8d38 51%, #f9b43b 100%);
   background: linear-gradient(top, #f9b43b 0%, #eb8d38 51%, #f9b43b 100%);
@@ -1635,36 +1642,40 @@ footer {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 75%; }
+  height: 75%;
+  position: relative; }
   @media screen and (max-width: 768px) {
     .price__wrapper {
       height: auto; } }
 
-.price__navigation {
-  position: relative; }
-
 .price__navigation-arrow {
   width: 1.875rem;
-  height: 1.875rem; }
+  height: 1.875rem;
+  position: absolute; }
+
+.price__navigation-next {
+  top: 50%;
+  right: -5%; }
+
+.price__navigation-prev {
+  top: 50%;
+  left: -5%; }
 
 .navigation-arrow__icon {
   width: 1.625rem;
   height: 1.875rem;
   fill: #fff;
-  position: absolute;
-  top: 50%; }
+  position: absolute; }
 
 .navigation-arrow__icon_left {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  left: 70%; }
+  transform: rotate(90deg); }
 
 .navigation-arrow__icon_right {
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  left: 55%; }
+  transform: rotate(-90deg); }
 
 .price__content {
   display: -webkit-box;

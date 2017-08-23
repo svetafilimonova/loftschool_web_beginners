@@ -113,6 +113,12 @@
         }
     }
 }
+
+.team__description-content {
+    display: flex;
+    width: 65%;
+}
+
 .team__description-photo {
    width: rem(100px);
     height: rem(100px);
