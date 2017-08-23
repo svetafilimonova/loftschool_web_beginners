@@ -202,6 +202,11 @@ $(function(){
     container = $('.maincontent'),
     isScroll = false;
 
+    var md = new MobileDetect(window.navigator.userAgent),
+    isMobile = md.mobile();
+    var screenWidth = $(window).width();
+    // console.log(screenWidth);
+
     var performScroll = function (sectionEq) {
 
         if(!isScroll){
@@ -237,7 +242,7 @@ $(function(){
         }
 
     
-
+        if(!isMobile || screenWidth >=768) {
     $('.wrapper').on('wheel', function(e){
 
         var scroll = e.originalEvent.deltaY;
@@ -257,9 +262,10 @@ $(function(){
         }
     });
 
+}
+
     $(document).on('keydown', function (e) {
 
-        console.log("jj");
 
         var section = findSection(sections);
 
@@ -287,11 +293,62 @@ $(function(){
 
     });
 
-    $(window).swipe({
-        //Generic swipe handler for all directions
-        swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-        //   alert("You swiped " + direction );  
-        }
-      });
+    // $(window).swipe({
+    //     //Generic swipe handler for all directions
+    //     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+    //     //   alert("You swiped " + direction );  
+    //     }
+    //   });
 
 });
+
+
+// Отправка формы
+
+
+
+
+var submitForm = function (e) {
+    e.preventDefault();
+
+    console.log('I am from submit');
+
+    var form = $(e.target);
+
+    var request = ajaxForm(form);
+
+
+    request.done(function(msg) {
+        // alert(msg);
+        var mes = msg.mes,
+            status = msg.status;
+        if (status === 'OK') {
+            form.append('<p style="color:white;">' + mes + '</p>');
+        } else{
+            form.append('<p style="color:white;">' + mes + '</p>');
+        }
+
+    });
+
+    request.fail(function(jqXHR, textStatus) {
+        alert("error" + textStatus);
+
+    });
+}
+
+var ajaxForm = function (form) {
+
+    var  url = form.attr('action'),
+         data = form.serialize();
+
+    return $.ajax({
+        type:'POST',
+        url : url,
+        data: data,
+        dataType : 'JSON'
+
+    });
+
+}
+
+$('#order-form').on('submit', submitForm);

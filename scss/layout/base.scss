@@ -58,6 +58,10 @@ footer {
     // min-width: rem(940px)+rem(20px);
     position:relative;
     overflow: hidden;
+
+    @include tablet {
+        overflow: visible;
+    }
 }
 
 .maincontent {
