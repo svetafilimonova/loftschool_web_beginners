@@ -1580,6 +1580,9 @@ footer {
   position: relative;
   text-align: center;
   margin: 1.5625rem 0; }
+  @media screen and (max-width: 480px) {
+    .hamburger-menu__item {
+      margin: 0.9375rem 0; } }
   .hamburger-menu__item:after {
     content: "";
     width: 5px;
@@ -1591,6 +1594,9 @@ footer {
     position: absolute;
     left: 50%;
     margin: 1.5625rem 0; }
+    @media screen and (max-width: 480px) {
+      .hamburger-menu__item:after {
+        margin: 0.9375rem 0; } }
   .hamburger-menu__item:last-child:after {
     display: none; }
 
