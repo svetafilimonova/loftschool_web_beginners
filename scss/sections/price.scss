@@ -35,11 +35,19 @@
     top: 50%;
     right:0%;
 
+    @include phone {
+        top: 45%;
+    }
+
 }
 
 .price__navigation-prev {
     top: 50%;
     left:0%; 
+
+    @include phone {
+        top: 45%;
+    }
 }
 
 .navigation-arrow__icon {
@@ -97,7 +105,7 @@
 }
 
  @include phone {
-    top: -20%;
+    top: -25%;
     left: 0%;
 }
 }
@@ -168,8 +176,8 @@
         left: 83%;
     }
     @include phone {
-        top: -20%;
-        left: 78%;
+        top: -25%;
+        left: 74%;
     }
 }
 
