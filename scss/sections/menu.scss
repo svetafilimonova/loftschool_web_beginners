@@ -98,6 +98,11 @@
     width: 0;
     transition: .5s;
 
+    @include phone {
+        
+        line-height: 1.2;
+    }
+
 }
 
 .menu__item-link {
