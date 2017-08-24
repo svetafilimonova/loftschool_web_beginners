@@ -32,6 +32,11 @@ display: none;
     text-align: center;
     margin: rem(25px) 0;
 
+    @include phone {
+      margin:rem(15px) 0;
+     }
+     
+
      &:after {
        content: "";
        width: 5px;
@@ -43,6 +48,10 @@ display: none;
        position: absolute;
        left: 50%;
        margin:rem(25px) 0;
+
+       @include phone {
+        margin:rem(15px) 0;
+       }
    }
 
 &:last-child:after {
