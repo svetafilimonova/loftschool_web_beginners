@@ -39,6 +39,11 @@
             width: rem(540px);
             padding-top: rem(64px);
             padding-left: rem(30px);
+
+            @include phone {
+                padding-top: rem(10px);
+                padding-left: rem(10px);
+            }
         }
 
         .menu__item-text {
@@ -121,6 +126,6 @@
 
 
      @include phone {
-         width: rem(60px);
+         width: rem(40px);
     }
 }

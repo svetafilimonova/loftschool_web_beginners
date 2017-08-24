@@ -290,12 +290,10 @@
     padding: rem(14px) rem(0px);
     display: none;
     transition: .3s;
-    @include tablet {
-    
-    }
+   
     @include phone {
         padding: rem(10px) rem(0px);
-        width: rem(230px);
+        width: rem(200px);
     }
 }
 
@@ -380,7 +378,7 @@
     border:none; 
     background: transparent;
     margin-bottom: 0;
-    padding: rem(50px) 0;
+    padding: rem(60px) 0;
  }
 
  .bx-viewport {
