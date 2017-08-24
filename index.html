@@ -155,13 +155,11 @@
             </section>
             <section class="section price">
                 <div class="section__wrapper  price__wrapper">
-                    <div class="price__navigation">
                         <a href="#" class="price__navigation-arrow price__navigation-prev">
                             <svg class="navigation-arrow__icon navigation-arrow__icon_left">
                                 <use xlink:href="img/sprite/sprite.svg#arrow-scroll"></use>
                             </svg>
                         </a>
-                    </div>
                     <div class="price__content">
                         <ul class="price__content-list bxslider">
                             <li class="price__content-item">
@@ -259,7 +257,7 @@
                                     <div class="price__content-amount">
                                         <span class="price__content-value section__title">500</span>
                                         <span class="price__content-currency section__text-title ">рублей</span>
-                                        <a href="#" class="button price__content-button">Заказать</a>
+                                        <a href="#" class="button price__content-button" data-go-to="6">Заказать</a>
                                     </div>
                                 </div>
                             </li>
@@ -358,7 +356,7 @@
                                     <div class="price__content-amount">
                                         <span class="price__content-value section__title">500</span>
                                         <span class="price__content-currency section__text-title ">рублей</span>
-                                        <a href="#" class="button price__content-button">Заказать</a>
+                                        <a href="#" class="button price__content-button" data-go-to="6">Заказать</a>
                                     </div>
                                 </div>
                             </li>
@@ -457,19 +455,17 @@
                                     <div class="price__content-amount">
                                         <span class="price__content-value section__title">500</span>
                                         <span class="price__content-currency section__text-title ">рублей</span>
-                                        <a href="#" class="button price__content-button">Заказать</a>
+                                        <a href="#" class="button price__content-button" data-go-to="6">Заказать</a>
                                     </div>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                    <div class="price__navigation">
                         <a href="" class="price__navigation-arrow price__navigation-next">
                             <svg class="navigation-arrow__icon navigation-arrow__icon_right">
                                 <use xlink:href="img/sprite/sprite.svg#arrow-scroll"></use>
                             </svg>
                         </a>
-                    </div>
                 </div>
             </section>
             <section class="section team">
@@ -936,19 +932,19 @@
                         <div class="form">
                             <div class="form__column-left">
                                 <div class="form__row form__row_double">
-                                    <label for="name" class="form__label">
+                                    <label for="user_name" class="form__label">
                                 <div class="form__label-title"> 
                                     Имя 
                                 </div>
                                 
-                            <input type="text" id="user_name" name="user_name" class="form__input">
+                            <input type="text" id="user_name" name="user_name" class="form__input" required>
                             </label>
 
                                     <label for="phone"  class="form__label">
                                 <div class="form__label-title"> 
                                     Телефон
                                 </div> 
-                            <input type="text" id="phone" name="user_phone-number" class="form__input">
+                            <input type="text" id="phone" name="user_phone-number" class="form__input" required>
                             </label>
 
                                 </div>
@@ -1013,7 +1009,7 @@
                             </label>
                                 </div>
                                 <div class="form__row form__row_btn">
-                                    <label for="callback" class="form__label form__label-control">
+                                    <label for="no_callback" class="form__label form__label-control">
                             <input type="checkbox" name="no_callback" value="1" class="form__check" id="no_callback">
                             <div class="form__checkbox-fake"></div>
                              <div class="form__control-title"> 
@@ -1024,7 +1020,7 @@
                                 </div>
                                 <div class="form__row form__row_btn">
                                     <button type="submit" class="button form__btn form__btn_active">Заказать</button>
-                                    <button type="submit" class="button  form__btn_inactive form__btn ">Очистить</button>
+                                    <button type="reset" class="button  form__btn_inactive form__btn ">Очистить</button>
                                 </div>
                             </div>
                     </form>
@@ -1078,7 +1074,7 @@
     </main>
     <nav class="navigation">
         <ul class="navigation__list">
-            <li class="navigation__list-item">
+            <li class="navigation__list-item active">
                 <a href="" class="navigation__list-link navigation__list-link_active" data-go-to="0"></a>
             </li>
             <li class="navigation__list-item">

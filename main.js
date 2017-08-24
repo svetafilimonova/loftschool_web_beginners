@@ -2,13 +2,13 @@ $(document).ready(function(){
  
     $('.ham-button').on('click', function(e){
     e.preventDefault()
-        $('.hamburger-menu').fadeIn(2000);   
+        $('.hamburger-menu').fadeIn(1000);   
 
 })
 
     $('.hamburger-menu__close').on('click', function(e){
     e.preventDefault()
-        $('.hamburger-menu').fadeOut(2000);  
+        $('.hamburger-menu').fadeOut(1000);  
 
 })
 
@@ -76,9 +76,12 @@ $(document).ready(function(){
     otherItems = item.siblings(),
     other = otherItems.find('.team__description'),
     // contHeight = item.find('.team__description-content').outerHeight();
-    contHeight = item.find('.team__description-avatar').outerHeight();
+    contHeight = item.find('.team__description-content').outerHeight();
+    contHeight += item.find('.team__description-avatar').outerHeight();
+    contHeight += item.find('.team__description-photo').outerHeight();
     contHeight += item.find('.team__description-text').outerHeight();
-    contHeight += item.find('.team__description-info').outerHeight();
+    // contHeight += item.find('.team__description-job').outerHeight();
+    // contHeight += item.find('.team__description-info').outerHeight();
 
   console.log(contHeight);
   
@@ -86,6 +89,9 @@ $(document).ready(function(){
 
     otherItems.removeClass('active');
     item.addClass('active');
+
+    // other.slideUp(200);
+    // content.slideDown(200);
 
 
          other.css({
@@ -96,8 +102,7 @@ $(document).ready(function(){
         'height': contHeight
 
     })
-    //  other.slideUp(200);
-    // content.slideDown(200);
+    
 
     
   
@@ -158,7 +163,35 @@ $(function() {
 
 // });
 
+// Всплывашка в секции со слайдером
 
+$(function() {
+
+var screenWidth = $(window).width();
+
+
+if(screenWidth <= 768) {
+    $('.price__content-hamburger').on('click',function(e){
+        e.preventDefault()
+        $('.price__content-ingredients-wrapper').fadeIn(1000);
+    
+    })
+
+
+    $('.ingredients-list__close').on('click', function(e){
+        e.preventDefault()
+            $('.price__content-ingredients-wrapper').fadeOut(1000);
+        })
+
+        console.log(screenWidth);
+
+
+
+}
+
+
+
+});
 
 
 // Всплывашка в отзывах
