@@ -198,7 +198,8 @@ if(screenWidth <= 768) {
 
 $(function() {
 
-$('.feedback__link-popup').fancybox();
+$('.feedback__link').fancybox();
+// $('.feedback__link-popup').fancybox();
 
 });
 
