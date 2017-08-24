@@ -3,6 +3,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    position: relative;
 
      @include phone {
          min-height: rem(300px);
@@ -39,6 +40,11 @@
             padding-top: rem(64px);
             padding-left: rem(30px);
         }
+
+        .menu__item-text {
+            color: $yellow;
+        }
+
     }
 }
 
@@ -91,6 +97,7 @@
     overflow: hidden;
     width: 0;
     transition: .5s;
+
 }
 
 .menu__item-link {
