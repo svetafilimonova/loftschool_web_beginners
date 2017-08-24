@@ -90,6 +90,9 @@ footer {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
+  @media screen and (max-width: 768px) {
+    .section {
+      height: 100vh; } }
 
 .section__title {
   font-family: 'gagalin', Helvetica, sans-serif;
@@ -1031,6 +1034,10 @@ footer {
     width: 33.75rem;
     padding-top: 4rem;
     padding-left: 1.875rem; }
+    @media screen and (max-width: 480px) {
+      .menu__item.active .menu__item-description {
+        padding-top: 0.625rem;
+        padding-left: 0.625rem; } }
   .menu__item.active .menu__item-text {
     color: #f9b43b; }
 
@@ -1102,7 +1109,7 @@ footer {
   padding: 0; }
   @media screen and (max-width: 480px) {
     .menu__item-link {
-      width: 3.75rem; } }
+      width: 2.5rem; } }
 
 .contacts {
   background-repeat: no-repeat;
@@ -1939,7 +1946,7 @@ footer {
   @media screen and (max-width: 480px) {
     .price__content-ingredients-list {
       padding: 0.625rem 0rem;
-      width: 14.375rem; } }
+      width: 12.5rem; } }
 
 .price__content-ingredients-item {
   display: -webkit-box;
@@ -2029,7 +2036,7 @@ footer {
   border: none;
   background: transparent;
   margin-bottom: 0;
-  padding: 3.125rem 0; }
+  padding: 3.75rem 0; }
 
 .bx-viewport {
   width: auto !important;
