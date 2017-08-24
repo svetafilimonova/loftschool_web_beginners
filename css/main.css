@@ -543,7 +543,7 @@ footer {
   justify-content: center; }
   @media screen and (max-width: 480px) {
     .about__description-pic {
-      margin-right: 1.875rem; } }
+      margin-right: 0.625rem; } }
 
 .about__description-title {
   font-family: 'lifehack';
@@ -1626,7 +1626,7 @@ footer {
     transform: rotate(-45deg); }
 
 .price {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f9b43b), color-stop(51%, #eb8d38), to(#f9b43b));
+  background: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(0%, #f9b43b), color-stop(51%, #eb8d38), to(#f9b43b));
   background: -webkit-linear-gradient(top, #f9b43b 0%, #eb8d38 51%, #f9b43b 100%);
   background: -o-linear-gradient(top, #f9b43b 0%, #eb8d38 51%, #f9b43b 100%);
   background: linear-gradient(top, #f9b43b 0%, #eb8d38 51%, #f9b43b 100%);
