@@ -977,7 +977,8 @@ footer {
   background-image: url(../img/bg/menu.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
   @media screen and (max-width: 480px) {
     .menu {
       min-height: 18.75rem; } }
@@ -1030,6 +1031,8 @@ footer {
     width: 33.75rem;
     padding-top: 4rem;
     padding-left: 1.875rem; }
+  .menu__item.active .menu__item-text {
+    color: #f9b43b; }
 
 .menu-title {
   color: #fff;
@@ -1613,7 +1616,7 @@ footer {
     transform: rotate(-45deg); }
 
 .price {
-  background: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(0%, #f9b43b), color-stop(51%, #eb8d38), to(#f9b43b));
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9b43b), color-stop(51%, #eb8d38), to(#f9b43b));
   background: -webkit-linear-gradient(top, #f9b43b 0%, #eb8d38 51%, #f9b43b 100%);
   background: -o-linear-gradient(top, #f9b43b 0%, #eb8d38 51%, #f9b43b 100%);
   background: linear-gradient(top, #f9b43b 0%, #eb8d38 51%, #f9b43b 100%);
@@ -1733,7 +1736,7 @@ footer {
       left: 0%; } }
   @media screen and (max-width: 480px) {
     .price__content-popup {
-      top: -16%;
+      top: -20%;
       left: 0%; } }
 
 @media screen and (max-width: 768px) {
@@ -1826,8 +1829,8 @@ footer {
       left: 83%; } }
   @media screen and (max-width: 480px) {
     .price__content-kkal {
-      top: -16%;
-      left: 81%; } }
+      top: -20%;
+      left: 78%; } }
 
 .content-kkal__icon {
   width: 8.6875rem;
