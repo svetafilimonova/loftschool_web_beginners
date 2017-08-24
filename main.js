@@ -132,8 +132,18 @@ $(function() {
     linkWidth = item.find('.menu__item-link').width();
     linkAmount = $('.menu__list').find('.menu__item-link').length;
     allLinkWidth = linkWidth * linkAmount;
+    screenWidth = $(window).width(); 
     contentWidth = $(window).width() - allLinkWidth;
+   
+    //изменить ширину раскрытия меню до 70% для компа
+    if(screenWidth > 768) { 
+       
+        contentWidth*=0.7;
+
+    }
+
     console.log(contentWidth);
+
 
     if(!item.hasClass('active')) {
 
